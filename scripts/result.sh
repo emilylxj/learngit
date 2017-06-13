@@ -1,4 +1,5 @@
 #!bash/bin
+#THis script is just to create transp-result directory for transp users
 #the usage is ./result.sh <username>
 echo "We will creat  the result directoy for the  new transp user "
 echo "the user name is $1"
