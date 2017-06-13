@@ -1,0 +1,58 @@
+#!/bin/sh -x
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=1000:00:00
+#PBS -e err.txt
+#PBS -o run.log 
+#PBS -N CB0-innermidplane
+#PBS -q parallel
+### start of jobscript
+
+#specify paths for run
+export CASENAME='CB0-innermidplane'
+export OBJDIR=${SOLPSTOP}/src/Braams/b2/base/${OBJECTCODE}
+export RUNDIR=/home/sfmao/solpsCODE/solps5.0/src/Braams/b2/runs/bench_mark_CB/CFETR-D+Ar-1gaspuff/$CASENAME
+export PBS_O_WORKDIR=$RUNDIR
+
+cd $PBS_O_WORKDIR
+echo "workdir: $PBS_O_WORKDIR"
+
+#make sure the ENVIRONMENT is correcttly set, otherwise include . setup.sh.sfmao into the .bash_profile
+echo $PATH
+ulimit -s 20000000
+#at the first run, change b2fstati to b2fstate
+#and also type setup_eirene.... when first run to setup USE_EIRENE environment
+touch b2mn.dat
+mv b2fstati b2fstati-old
+mv b2fstate b2fstati
+
+#copy B2 input to run directory
+rm -rf b2mn.exe.dir 
+mkdir b2mn.exe.dir 
+cp b2mn.dat b2fgmtry b2fpardf b2fstati b2frates b2mn.exe.dir
+rm -f b2mn.prt b2fparam b2fstate b2fmovie b2ftrace b2ftrack b2fplasma b2time.nc b2tallies.nc b2movies.nc b2wall.nc
+
+#copy Eirene input to run directory
+cd b2mn.exe.dir 
+ln -s ../HYDHEL ../AMJUEL ../METHANE ../SPUTER ../H2VIBR ../fort.21 ../fort.22 ../input.dat .  
+[ -e ../fort.15 ] && cp -p ../fort.15 .
+[ -e ../fort.13 ] && cp -p ../fort.13 .
+
+#set for continuous tracing for ank_tracing
+mkdir tracing
+[ -d ../tracing ] && cp -r ../tracing .
+
+#run the case
+cp ${OBJDIR}/b2mn.exe .
+./b2mn.exe < input.dat 
+
+#save the results, note after the first run, modify the fourth number 10100 to 30300 in line 3 of input.dat
+mv b2mn.prt b2fparam b2fstate b2fmovie b2ftrace b2ftrack b2fplasma b2time.nc b2tallies.nc b2movies.nc b2wall.nc .. 
+mv tracing/* ../tracing 
+mv fort.30 fort.31 fort.44 ..
+[ -e fort.13 ] && mv fort.13 ..
+[ -e fort.15 ] && mv fort.15 ..
+
+#save results to save.time
+cd ..
+b2s.sh `date +save.%y_%m_%d_%H_%M_%S`
+
