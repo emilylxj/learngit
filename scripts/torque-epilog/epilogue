@@ -1,0 +1,57 @@
+#!/bin/bash
+# Clear out TMPDIR
+# Copyright 1999, 2000, 2001 Ohio Supercomputer Center
+# epilogue gets 9 arguments:
+# 1 -- jobid
+# 2 -- userid
+# 3 -- grpid
+# 4 -- job name
+# 5 -- sessionid
+# 6 -- resource limits
+# 7 -- resources used
+# 8 -- queue
+# 9 -- account
+#
+#
+export LC_ALL=C
+
+jobid=$1
+user=$2
+nodefile=/var/lib/torque/aux/$jobid
+if [ -r $nodefile ] ; then
+    nodes=$(sort $nodefile | uniq)
+else
+    nodes=localhost
+fi
+
+export TMP_DIR=/tmp/$user.$jobid
+
+for i in $nodes ; do
+#  ssh $i rm -rf $TMP_DIR
+  if [ $user != 'root' ] ;then
+     logger -t pbs_mom "disable $user login"
+     ssh $i "perl -pi -e \"s/ $user //g\" /etc/security/access.conf"
+  fi 
+done
+
+echo ""
+echo "--------------------------------------------------"
+echo "Begin Epilogue: "
+echo "Job ID: $1"
+echo "User ID: $2"
+echo "Group ID: $3"
+echo "Job Name: $4"
+echo "Session ID: $5"
+echo "Resource List: $6"
+echo "Resources Used: $7"
+echo "Queue Name: $8"
+echo "Account String: $9"
+echo "End Epilogue: $(date)"
+echo "--------------------------------------------------"
+echo ""
+echo "=== JOB DONE!  YEAH!      "
+echo "=== I AM THE KING LORD OF HORSE!   "
+echo "=== Bye! Don't forget to tip!!  "
+echo ""
+exit 0
+

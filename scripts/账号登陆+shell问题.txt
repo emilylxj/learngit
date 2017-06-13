@@ -1,0 +1,30 @@
+情况一：
+
+ 使用bash登录的用户，如果因为bashrc或者bash_profile下的文件被更改而导致不能正常登录的话，就更新这两个文件即可。
+
+
+情况二：
+
+  如果不是使用的bash登录，首先查看是用什么登录的，比如tcsh，可用ps -aux |grep jhuang查看登录者的信息。并保持ldap下面的shell和使用用户使用的shell一致
+
+
+黄娟老师的账号一直出现异常，ctrl+c才能正常登录，更新了bash的配置文件，仍然解决不了，ps -aux |grep jhuang查看，发现根本没有调用bash，调用的仍然是tcsh，查看man tcsh手册：
+ A  login  shell  begins  by  executing  commands  from the system files
+       /etc/csh.cshrc and /etc/csh.login.   It  then  executes  commands  from
+       files  in  the  user\u2019s  home  directory:  first  ~/.tcshrc  (+)  or, if
+       ~/.tcshrc is not found, ~/.cshrc, then ~/.history (or the value of  the
+       histfile shell variable), then ~/.login, and finally ~/.cshdirs (or the
+       value of  the  dirsfile  shell  variable)  (+).   The  shell  may  read
+       /etc/csh.login  before  instead  of  after /etc/csh.cshrc, and ~/.login
+       before instead of after ~/.tcshrc or ~/.cshrc  and  ~/.history,  if  so
+       compiled; see the version shell variable. (+)
+
+       Non-login  shells read only /etc/csh.cshrc and ~/.tcshrc or ~/.cshrc on
+       startup.
+
+查看 ~/.tcshrc  ~/.cshrc都没有问题，后来删除了~/.history文件，竟然解决了问题，有可能是这文件权限之类的有问题吧。
+
+
+
+
+问题虽然解决了，但是主要学习的是解决问题的思路，其中用到了pkill -9 ID来删除正在使用的tcsh

@@ -1,0 +1,13 @@
+dn: uid=candy,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: candy
+gidNumber: 509
+givenname: candy
+homedirectory: /home/users/candy
+loginshell: /bin/bash
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Jeffcandy
+uid: candy
+uidNumber: 1247
+userpassword: {crypt}$1$9Va1JgDw$0OABnHMjWWJMCekP/4enB0

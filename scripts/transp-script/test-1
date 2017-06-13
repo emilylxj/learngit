@@ -1,0 +1,10 @@
+#!/bin/bash
+#  if TRANSP environment has not been set up, $CONFIGDIR will be undefined.
+cd ..
+set tokid = $cwd:t
+cd -
+
+#set tokid = $cwd:t
+echo " tokid: $tokid"
+fgrep $tok $CONFIGDIR/TOKAMAK.DAT
+

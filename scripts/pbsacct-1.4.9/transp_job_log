@@ -1,0 +1,45 @@
+
+Portable Batch System accounting statistics
+-------------------------------------------
+
+Processing a total of 1 accounting files... done.
+The first job record is dated 2015年01月04日 星期日 10时04分23秒.
+The last  job record is dated 2017年04月25日 星期二 10时44分40秒.
+
+                          Wallclock          Average Average
+Username    Group   #jobs      hours  Percent  #nodes  q-hours  Full name
+--------    -----   ----- ---------  ------- ------- -------  ---------
+   TOTAL        -    2828  102527.84   100.00    9.24    0.29
+duhongfe      ipp     410  29240.29     1.19   27.84    0.38  
+  chenyq      ipp     294  19977.05     0.81   21.31    0.08  
+   blhao      ipp     241   9425.18     0.38    1.85    0.53  
+ minxiao      ipp     229   8084.08     0.33   16.64    0.62  
+zhangxia  visitor     103   7625.33     0.31    4.69    0.00  
+   wubin      ipp     102   6705.91     0.27   16.75    0.03  
+ shenwei   theory       4   4025.37     0.16  102.72    0.20  
+zhengzhe   theory     128   2099.81     0.09   13.13    0.04  
+ renzhzh  visitor      12   2290.51     0.09   64.00    1.46  
+   sding      ipp     221   1950.40     0.08   20.24    0.12  
+ hexiang  visitor      77   1620.50     0.07    9.93    1.39  
+  wangsx      ipp     111   1515.66     0.06   15.83    0.43  
+  pldong      ipp       7   1361.29     0.06   16.00    0.00  
+   liuxj   theory     194   1576.87     0.06   21.35    0.01  
+  hruiji      ipp      11   1310.87     0.05   16.25    0.02  
+   cyliu      ipp     124   1072.65     0.04    7.28    0.35  
+lihaode2    users      15    629.09     0.03    8.72    1.13  
+ pxchang      ipp      89    555.95     0.02    5.60    0.43  
+    liul      ipp      62    471.82     0.02   25.68    0.00  
+    xzhu      ipp      15    171.49     0.01   25.34    1.41  
+ shikeyi  visitor      93    215.67     0.01    1.02    0.00  
+  jfwang      ipp      36    265.81     0.01   27.49    0.04  
+yukailiu      ipp      40     95.18     0.00   14.54    0.00  
+    yguo    users       8     17.16     0.00   10.43    0.14  
+xueerbin  visitor      55     73.94     0.00    1.07    0.33  
+     wtf      ipp      11     15.94     0.00   15.94    0.00  
+schuster  visitor       9      2.29     0.00   14.16    0.00  
+   majun   theory       6     59.61     0.00    8.00    0.00  
+   liuli  visitor      30     36.91     0.00    1.75    0.00  
+   likai      ipp      21      4.19     0.00    3.86    0.00  
+    hfdu      ipp      66     27.91     0.00   10.30    0.15  
+  hdzhou      ipp       1      1.07     0.00    8.00    0.00  
+  cliang      ipp       1      2.05     0.00   16.00    0.21  

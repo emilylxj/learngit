@@ -1,0 +1,2 @@
+tar -xzvf /install/archive/src/openmpi-1.6.3.tar.gz  -C .
+module load complier/

@@ -1,0 +1,21 @@
+ ./configure  CC=gcc   CXX=g++ F77=gfortran FC=gfortran --prefix=/install/build/liuxj/$PRG_ENV/openmpi-1.6.3  --with-openib=/usr --enable-openib-connectx-xrc --enable-mpi-thread-multiple --with-threads --with-hwloc --enable-heterogeneous --with-mxm=/opt/mellanox/mxm --with-mxm-libdir=/opt/mellanox/mxm/lib --enable-mpirun-prefix-by-default --enable-binaries --with-devel-headers --with-sge --with-fca=/opt/mellanox/fca
+CPP=pgcpp -E CC=pgcc CXXCPP=pgcpp -E CXX=pgcpp F77=pgf77 FC=pgf90 F90=pgf90 
+
+./configure  --prefix=/vol-th/home/xiaty/openmpi-1.6.3  --enable-openib-connectx-xrc --enable-mpi-thread-multiple --with-threads --with-hwloc --enable-heterogeneous --enable-binaries --with-devel-headers >& configure.log &
+./configure CC=gcc CXX=g++ F77=gfortran FC=gfortran --prefix=/install/build/liuxj//openmpi-1.6.3 --with-openib=/usr --enable-openib-connectx-xrc --enable-mpi-thread-multiple --with-threads --with-hwloc --enable-heterogeneous --enable-binaries --with-devel-headers
+./configure CC=gcc CXX=g++ F77=lf95 FC=lf95 --prefix=/pkg/openmpi/1.6.3-new/$PRG_ENV/  --with-openib=/usr --enable-openib-connectx-xrc --enable-mpi-thread-multiple --with-threads --with-hwloc --enable-heterogeneous --enable-binaries --with-devel-headers
+
+>     CFLAGS="" FCFLAGS="" ./configure        \
+>
+>     --with-sge                              \
+>     --with-openib                           \
+>     --enable-openib-connectx-xrc            \
+>     --enable-mpi-thread-multiple            \
+>     --with-threads                          \
+>     --with-hwloc                            \
+>     --enable-heterogeneous                  \
+>     --with-fca=/opt/mellanox/fca            \
+>     --with-mxm-libdir=/opt/mellanox/mxm/lib \
+>     --with-mxm=/opt/mellanox/mxm            \
+>     --prefix=/data/openmpi-1-6.3 :q
+

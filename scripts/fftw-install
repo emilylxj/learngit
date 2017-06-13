@@ -1,0 +1,27 @@
+./configure --prefix=/pkg/fftw/3.3.3/$PRG_ENV  --enable-shared --enable-openmp --enable-mpi --enable-threads --with-gnu-ld --enable-float
+
+make >& make.log &
+
+make check >& makecheck.log &
+make install  >& makeinstall.log &
+make installcheck >& makeinstallcheck.log &
+
+./configure --prefix=/pkg/fftw/2.1.5/$PRG_ENV  --enable-shared --enable-openmp --enable-mpi --enable-threads --with-gnu-ld --enable-float --enable-fortran >&configure.log &
+
+make -j 8  >& make.log &
+make check >& makecheck.log &
+make install  >& makeinstall.log &
+
+#./configure --prefix=/pkg/fftw/3.3.3/$PRG_ENV  --enable-shared --enable-openmp --enable-mpi --enable-threads --with-gnu-ld --enable-float --enable-fortran >&configure.log &
+make -j 8  >& make.log &
+make check >& makecheck.log &
+make install  >& makeinstall.log &
+
+#./configure --prefix=/pkg/fftw/3.3.3/$PRG_ENV  --enable-shared --enable-openmp --enable-mpi --enable-threads --with-gnu-ld --enable-single --enable-fortran >&configure.log &
+
+#./configure --prefix=/pkg/fftw/3.3.3/$PRG_ENV  --enable-shared --enable-openmp --enable-mpi --enable-threads --with-gnu-ld --enable-single  >&configure.log &
+
+./configure --prefix=/pkg/fftw/3.3.3/$PRG_ENV  --enable-shared --enable-openmp --enable-mpi --enable-threads --with-gnu-ld --enable-fortran >&configure.log &
+
+configure_fftw-2.1.5_sc_x86-64 /include  /info  /lib 
+其中/lib下f结尾的库文件libfftw3f.a为单精度(float), l结尾的为长双精度(long double), 缺省的libfftw3.a是双精度(double),

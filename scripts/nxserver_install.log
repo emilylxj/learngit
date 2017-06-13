@@ -1,0 +1,1000 @@
+    3  vim /etc/collectd.conf
+    4  service  collectd restart
+    5  vim /etc/collectd.conf
+    6  service  collectd restart
+    7  vim /etc/collectd.conf
+    8  yum search collectd
+    9  vim /etc/collectd.conf
+   10  service  collectd restart
+   11  vim /etc/collectd.conf
+   12  service  collectd restart
+   13  vim /etc/collectd.conf
+   14  service collectd restart
+   15  vim /etc/collectd.conf
+   16  service collectd restart
+   17  vim /etc/collectd.conf
+   18  service collectd restart
+   19  vim /etc/collectd.conf
+   20  service collectd restart
+   21  vim /etc/collectd.conf
+   22  service collectd restart
+   23  yum serach collectd
+   24  yum search collectd
+   25  ls
+   26  cd /etc/collectd.d/
+   27  ls
+   28  cd ..
+   29  ls
+   30  vim collectd.conf.orig 
+   31  cp collectd.conf.orig collectd.conf
+   32  vim collectd.conf
+   33  service collectd restart
+   34  yum search gmond
+   35  yum search collectd
+   36  yum info collectd
+   37  yum search collectd
+   38  yum install ganglia-gmond
+   39  service gmond start
+   40  service gmond status
+   41  vim /etc/ganglia/gmond.conf 
+   42  service gmond start
+   43  vim /etc/ganglia/gmond.conf 
+   44  service gmond restart
+   45  yum search collectl
+   46  yum install collectl
+   47  ip addr
+   48  service httpd status
+   49  yum install httpd
+   50  service httpd start
+   51  collectl --export graphite,10.10.0.104 
+   52  collectl --export graphite,10.10.0.104 -D
+   53  ip addr
+   54  /etc/init.d/paramon status
+   55  /etc/init.d/paramon start
+   56  ip addr
+   57  ifdown  em1
+   58  ifup  em1
+   59  ip addr
+   60  /etc/init.d/paramon status
+   61  ip addr
+   62  service  paramon restart
+   63  ip addr
+   64  ls
+   65  rpm -qa |grep php
+   66  yum search http
+   67  clear
+   68  rpm -qa |grep httpd
+   69  /etc/init.d/httpd status
+   70  vim /etc/httpd/
+   71  cd  /etc/httpd/
+   72  ping 202.127.204.23
+   73  ping 202.127.204.22
+   74  ls
+   75  cd conf.d/
+   76  ls
+   77  vim welcome.conf 
+   78  ls
+   79  vim README 
+   80  vim /etc/httpd/conf/httpd.conf 
+   81  /etc/init.d/httpd start
+   82  chkconfig  httpd on
+   83  vim /var/www/html/index.html
+   84  ip addr
+   85  ls
+   86  ip addr
+   87  df -h
+   88  ip addr
+   89  service network restart
+   90  vim .ssh/authorized_keys 
+   91  cd /etc/ssh/
+   92  vim sshd_config
+   93  cd 
+   94  ls
+   95  cp sshd_config /etc/ssh/
+   96  vim /etc/ssh/sshd_config
+   97  vim .ssh/authorized_keys 
+   98  service sshd restart
+   99  ip addr
+  100  rpm -qa |grep nomachine
+  101  vim /etc/ssh/sshd_config
+  102  service  sshd restart
+  103  vim /etc/ssh/sshd_config
+  104  service  sshd restart
+  105  yum install firefox
+  106  firefox  &
+  107  rpm -qa |grep nomachine
+  108  ls
+  109  rpm  -ivh nomachine-enterprise-server-evaluation_4.6.12_8_x86_64.rpm 
+  110  ping 10.10.1.254
+  111  ssh root@10.10.1.254 -p 1022
+  112  cd /usr/NX/
+  113  ls
+  114  cd etc/
+  115  ls
+  116  mv server.lic  server.lic.old
+  117  ll
+  118  vim server.lic
+  119  mv node.lic  node.lic.old
+  120  vim node.lic.old 
+  121  vim node.lic
+  122  ll -lrt
+  123  chmod  500 server.lic
+  124  chmod  500 node.lic
+  125  ll -lrt
+  126  chmod  400 node.lic
+  127  chmod  400 server.lic
+  128  ll -lrt
+  129  cd /etc/profile.d/
+  130  ls
+  131  vim nx.sh
+  132  vim nx.csh
+  133  vim nx.sh
+  134  nxserver --version
+  135  nxserver --status
+  136  nxserver --version
+  137  nxserver --start
+  138  rpm -e nomachine
+  139  rpm -qa |grep nomachine
+  140  rpm -e nomachine-enterprise-server
+  141  ls
+  142  cd /usr/NX/
+  143  ls
+  144  cd ..
+  145  rm -rf NX/
+  146  ls
+  147  cd /usr/NX/
+  148  ls
+  149  cd bin/
+  150  ls
+  151  cd /etc/profile.d/
+  152  ls
+  153  vim nx.sh
+  154  vim nx.csh
+  155  nxserver --version
+  156  nxserver --status
+  157  nxserver --nodelist
+  158  nxserver --start
+  159  nxserver --status
+  160  ssh shenmalogin110
+  161  ssh login110
+  162  ssh login111
+  163  ssh login13
+  164  ssh 10.10.1.13
+  165  ssh 10.10.0.110
+  166  ssh 10.10.10.110
+  167  ssh 10.10.10.111
+  168  ssh login113
+  169  ssh login114
+  170  ssh login112
+  171  ssh login111
+  172  clear
+  173  nxserver --status
+  174  nxserver --restart
+  175  nxserver --status
+  176  rpm -qa |grep nomachine
+  177  nxserver --nodelist
+  178  cd /usr/NX/
+  179  l
+  180  ls
+  181  cd etc/
+  182  ls
+  183  vim server.cfg
+  184  nxserver --help |grep dele
+  185  nxserver --help |grep node
+  186  nxserver --nodelist
+  187  nxserver --nodedel shenma13:4000
+  188  nxserver --nodedel shenma14:4000
+  189  nxserver --nodedel shenma14
+  190  nxserver --nodedel shenma14:4000
+  191  nxserver  --rulelist
+  192  nxserver  --ruledel  enable-multinode
+  193  nxserver  --ruledel  --node 
+  194  nxserver  --ruledel  --node shenma13:4000
+  195  nxserver  --ruledel  --node shenma14:4000
+  196  nxserver  --ruledel  --node shenma12:4000
+  197  nxserver  --rulelist
+  198  nxserver --nodelist
+  199  nxserver --nodedel shenma13:4000
+  200  nxserver --nodedel shenma14:4000
+  201  nxserver --nodedel login110:4000
+  202  nxserver --nodedel login111:4000
+  203  nxserver --nodelist
+  204  nxserver --ruleadd --class feature --type manual-node-selection --value yes --system
+  205  nxserver --ruleadd  --class feature --type enable-multinode  --value yes --system
+  206  nxserver --nodeadd login110 --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  207  nxserver --nodelist
+  208  nxserver --nodeadd login110 --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  209  cd /etc/NX
+  210  cd /usr/NX
+  211  ls
+  212  nxserver --status
+  213  nxserver --help |grep start
+  214  nxserver --start nxd
+  215  nxserver --stop nxd
+  216  nxserver --start nxd
+  217  nxserver --startup
+  218  sudo chown nx:root  /usr/NX/var/run/localsession.pid
+  219  nxserver --nodeadd login110 --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  220  nxserver --nodelist
+  221  ls
+  222  ps -ef |grep balance3
+  223  su - liuxj
+  224  balance 22 login110:22 login111:22 &
+  225  yum install balance
+  226  cd /etc/yum.repos.d
+  227  ls
+  228  ll -lrt
+  229  vim epel.repo 
+  230  ip addr
+  231  ls
+  232  vim epel.repo 
+  233  vim CentOS-Base.repo 
+  234  yum install balance
+  235  balance 22 login110:22 login111:22 &
+  236  pkill balance
+  237  balance 1022 login110:1022 login111:1022 &
+  238  ls
+  239  cd 
+  240  ls
+  241  rpm -ivh nomachine-enterprise-server-update_4.2.25_3_x86_64.rpm 
+  242  cd /usr/NX/
+  243  ls
+  244  cd etc/
+  245  ls
+  246  vim server.lic
+  247  nxserver --status
+  248  nxserver --version
+  249  nxserver --startup
+  250  nxserver --nodeadd login110 --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  251  nxserver --nodelist
+  252  nxserver --nodeadd login111 --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  253  nxserver --nodeadd login112 --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  254  nxserver --nodeadd login113 --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  255  nxserver --relelist
+  256  nxserver --rulelist
+  257  nxserver --nodelist
+  258  ip addr
+  259  ping 10.10.0.101
+  260  ip addr
+  261  cd /etc/sysconfig/network-scripts/
+  262  ls
+  263  vim ifcfg-eth1
+  264  ls
+  265  vim ifcfg-eth2
+  266  ip addr
+  267  ifup  em2
+  268  ls
+  269  vim ifcfg-em3
+  270  vim ifcfg-em4
+  271  ip addr
+  272  vim ifcfg-em3 
+  273  cp ifcfg-em3 ifcfg-em1
+  274  vim ifcfg-em1
+  275  ip addr
+  276  vim ifcfg-em1
+  277  ifdown  em1
+  278  ifup  em1
+  279  ip addr
+  280  ls
+  281  vim ifcfg-em1 
+  282  vim ifcfg-em1
+  283  ifdown  em1
+  284  ifup  em1
+  285  ip addr
+  286  cp ifcfg-em1 ifcfg-em2
+  287  vim ifcfg-em2
+  288  ip addr
+  289  vim ifcfg-em2
+  290  ifdown  em2
+  291  ifup  em2
+  292  vim ifcfg-em2
+  293  ifdown  em2
+  294  ifup  em2
+  295  ping  10.10.10.101
+  296  vim ifcfg-em2
+  297  ifdown  em2
+  298  ifup  em2
+  299  ping 10.10.10.101
+  300  vim ifcfg-em2
+  301  ifdown  em2
+  302  ifup  em2
+  303  ping 10.10.10.101
+  304  ping 10.10.0.101
+  305  ping 10.10.10.101
+  306  ip addr
+  307  vim ifcfg-em2
+  308  ifdown  em2
+  309  ifup  em2
+  310  ip addr
+  311  ping 10.10.10.101
+  312  vim ifcfg-em2
+  313  ifdown  em2
+  314  ifup  em2
+  315  vim ifcfg-em2
+  316  ifdown  em2
+  317  ifup  em2
+  318  ping 10.10.10.101
+  319  ifup  em1
+  320  vim   em1
+  321  vim   ifcfg-em1
+  322  vim   ifcfg-em2
+  323  exit
+  324  ip addr
+  325  vim /etc/ssh/sshd_config
+  326  ip addr
+  327  ls
+  328  ip addr
+  329  nxserver --version
+  330  nxserver --nodelist
+  331  cd /etc/profile.d/
+  332  ls
+  333  vim nx.sh 
+  334  vim nx.csh 
+  335  ls
+  336  cd /usr/NX/
+  337  ls
+  338  cd etc/
+  339  ls
+  340  cd keys/
+  341  ls
+  342  cd ..
+  343  ls
+  344  vim server.lic
+  345  nxserver --nodelist
+  346  nxserver --restart
+  347  nxserver --nodelist
+  348  nxserver --help |grep update
+  349  nxserver --nodeupdate login113:4000
+  350  ssh login113
+  351  nxserver --nodeupdate login113:4000
+  352  ssh login113
+  353  cd ~/.ssh/
+  354  ls
+  355  vim id_rsa.pub 
+  356  vim authorized_keys 
+  357  vim id_rsa.pub 
+  358  nxserver --nodeupdate login113:4000
+  359  nxserver --nodelist
+  360  nxserver --nodeupdate login113:4000
+  361  cd /usr/NX/
+  362  ls
+  363  cd etc/
+  364  ls
+  365  cd keys/
+  366  ls
+  367  ll
+  368  cd host/
+  369  ls
+  370  cd ..
+  371  ls
+  372  ll
+  373  nxserver --nodeupdate login113
+  374  nxserver --nodedel login113:4000
+  375  nxserver --nodeadd login113 --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  376  nxserver --nodelist
+  377  cd /etc/ssh/
+  378  ls
+  379  vim sshd_config
+  380  df -h
+  381  nxserver --nodeadd login113 --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  382  nxserver --nodedel login113:4000
+  383  nxserver --nodeadd login113 --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  384  nxserver --nodelist
+  385  nxserver --nodedel login112:4000
+  386  nxserver --nodeadd login112 --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  387  nxserver --nodedel login111:4000
+  388  nxserver --nodeadd login111 --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  389  nxserver --nodedel login110:4000
+  390  nxserver --nodeadd login110 --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  391  nxserver --nodelist
+  392  ip addr
+  393  ping 10.10.10.105
+  394  ping 10.10.10.110
+  395  ping 10.10.10.111
+  396  nxserver --resoure
+  397  nxserver --help |grep resour
+  398  nxserver --resourcelist
+  399  cd /usr/NX/
+  400  ls
+  401  cd etc/
+  402  ls
+  403  vim server.cfg
+  404  su - liuxj
+  405  nxserver --stop
+  406  cd .ssh/
+  407  ls
+  408  vim authorized_keys 
+  409  cd /etc/ssh/
+  410  ls
+  411  vim sshd_config
+  412  qmgr -c 'creat queue parallel'
+  413  vim /etc/ganglia/gmond.conf 
+  414  service gmond status
+  415  service gmond start
+  416  ip addr
+  417  ls
+  418  ip addr
+  419  service gmond restart
+  420  cd /etc/sysconfig/network-scripts/
+  421  ls
+  422  vim route-em1
+  423  ip addr
+  424  service network restart
+  425   ip addr
+  426  ifup em1
+  427  ip addr
+  428  ifup em3
+  429  ifup em2
+  430  exkt
+  431  exit
+  432  vim /etc/ssh/sshd_config
+  433  service sshd restart
+  434  vim .ssh/authorized_keys 
+  435  vim .ssh/authorized_keys 
+  436  cd .ssh/
+  437  ls
+  438  vim id_rsa.pub 
+  439  ssh shenma004
+  440  ssh login110
+  441  ssh mds003
+  442  ping 10.10.1.102
+  443  ping 10.10.0.102
+  444  ip addr
+  445  ping 10.10.1.101
+  446  ping 10.10.1.102
+  447  ps aux
+  448  pstree
+  449  rpm -qa |grep torque
+  450  /etc/init.d/paramon status
+  451  cd /etc/paratera/
+  452  ls
+  453  vim pcnt.conf 
+  454  ls
+  455  ping 210.73.195.19
+  456  df -h
+  457  ssh emily@210.73.195.19
+  458  vim /etc/ssh/sshd_config
+  459  vim ~/.ssh/authorized_keys 
+  460  balance  10022 login112:22 &
+  461  ps 
+  462  ps  -ef |grep balance
+  463  pkill balance
+  464  balance 1022 login110:1022 login111:22 &
+  465  pkill balance
+  466  ps  -ef |grep balance
+  467  balance 1022 login112:22 &
+  468  ps  -ef |grep balance
+  469  pkill balance
+  470  balance 10022 login112:22 &
+  471  system-config-firewall-tui 
+  472  ssh login112
+  473  ping 10.10.1.112
+  474  ping 10.10.0.112
+  475  ping 10.10.10.112
+  476  ping 10.10.0.112
+  477  ping 10.10.10.112
+  478  pkill  balance
+  479  balance 10022 10.10.10.112:22 &
+  480  ls
+  481  cd /etc/NX/
+  482  ls
+  483  ls -lh
+  484  cd nxserver 
+  485  ls -lh
+  486  cd server/
+  487  ls
+  488  vim localhost/
+  489  vim localhost/server.cfg 
+  490  ls
+  491  cd localhost/
+  492  ls
+  493  vim node.cfg 
+  494  cd /usr/NX/etc/
+  495  ls
+  496  cd ../
+  497  ls
+  498  cd var/
+  499  ls
+  500  cd log/
+  501  ls -lh
+  502  vim nxserver.log 
+  503  cd ../
+  504  ls
+  505  cd ..
+  506  ls
+  507  cd etc/
+  508  ls
+  509  vim server.cfg
+  510  ls
+  511  ip addr
+  512  nxserver --status
+  513  nxserver --start
+  514  nxserver --status
+  515  nxserver --nodelist
+  516  cd /usr/NX/
+  517  ls
+  518  cd etc/
+  519  ls
+  520  vim server.cfg
+  521  nxserver --restart
+  522  nxserver --nodelist
+  523  nxserver --update login110:4000
+  524  nxserver --nodelist
+  525  nxserver --restart
+  526  nxserver --status
+  527  history 
+  528  nxserver --nodeupdate login113:4000
+  529  ip addr
+  530  nxserver --nodedel login113:4000
+  531  nxserver --nodeadd 10.10.10.113  --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  532  nxserver --nodelist
+  533  nxserver --nodedel login110:4000
+  534  nxserver --nodedel login111:4000
+  535  nxserver --nodedel login112:4000
+  536  nxserver --nodelist
+  537  rpm -qa |grep nomachine
+  538  ip addr
+  539  history  |grep nxserver
+  540  cd /usr/NX/
+  541  ls
+  542  cd var/
+  543  ls
+  544  cd log/
+  545  ll -lrt
+  546  tail nxserver.log 
+  547  tail -f nxserver.log 
+  548  tail -f nxerror.log 
+  549  vim  /etc/pam.d/sshd 
+  550  tail -f nxerror.log 
+  551  tail -f nxserver.log 
+  552  cd ..
+  553  s
+  554  cd ..
+  555  ls
+  556  cd etc/
+  557  ls
+  558  cd /etc/ssh/
+  559  ls
+  560  vim sshd_config
+  561  tail -f /usr/NX/var/log/nxserver.log 
+  562  su - liuxj
+  563  vim sshd_config
+  564  service sshd restart
+  565  yum install -y openldap-clients nss-pam-ldapd
+  566  LDAP_SERVER=10.10.0.103
+  567  LDAP_DN="dc=shenma,dc=ipp,dc=ac,dc=cn"
+  568  authconfig --enableldap --enableldapauth --ldapserver=$LDAP_SERVER --ldapbasedn=$LDAP_DN --enablemkhomedir --update
+  569  /etc/init.d/nslcd  status
+  570  su - liuxj
+  571  history 
+  572  history  |grep 4000
+  573   nxserver --nodeadd 10.10.10.112 --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  574   nxserver --nodeadd 10.10.10.111 --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  575   nxserver --nodeadd 10.10.0.110 --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  576  nxserver --nodelist
+  577  cd /usr/NX/
+  578  ls
+  579  cd var/
+  580  l
+  581  ls
+  582  cd log/
+  583  ll
+  584  cat nxserver.log |grep xiaty
+  585  nxserver --nodelist
+  586  ip addr
+  587  nxserver --status
+  588  tail -f /usr/NX/var/log/nxserver.log 
+  589  tail -f /usr/NX/var/log/nxerror.log 
+  590  cd /usr/NX/
+  591  ls
+  592  cd etc/
+  593  ls
+  594  vim server.cfg
+  595  nxserver --nodelist
+  596  ls
+  597  cd /usr/NX/
+  598  ls
+  599  cd etc/
+  600  ls
+  601  vim server.cfg
+  602  yum grouplist
+  603  yum grouplist |grep Desktop
+  604  cd /etc/yum.repos.d
+  605  ls
+  606  vim shenma-build.repo 
+  607  yum clean
+  608  yum grouplist
+  609   yum -y  groupinstall "KDE Desktop"
+  610  make cache
+  611  yum makecache
+  612  yum --help
+  613  yum makecache
+  614  cd /etc/yum.repos.d
+  615  ls
+  616  vim xCAT-otherpkgs0.repo 
+  617  vim epel.repo 
+  618  mkdir old
+  619  mv xCAT-* old/
+  620  ls
+  621  mv epel* old/
+  622  ls
+  623  yum makecache
+  624  vim shenma-build.repo 
+  625  rm shenma-build.repo 
+  626  vim shenma-build.repo
+  627  yum makecache
+  628  ls
+  629  cd /usr/NX/
+  630  ls
+  631  cd etc/
+  632  ls
+  633  vim server.cfg
+  634  nxserver --restart
+  635  vim server.cfg
+  636  nxserver --restart
+  637  vim server.cfg
+  638  vim node.cfg
+  639  nxserver --restart
+  640  vim node.cfg
+  641  nxserver --restart
+  642  vim server.cfg
+  643  nxserver --restart
+  644  vim server.cfg
+  645  vim node.cfg
+  646  nxserver --restart
+  647  xs /usr/NX/
+  648  cd /usr/NX/
+  649  ls
+  650  cd etc/
+  651  ls
+  652  vim node.cfg
+  653  nxserver --nodelist
+  654  cd /usr/NX/var/
+  655  ls
+  656  cd log/
+  657  ls
+  658  tail -f nxserver.log 
+  659  nxserver --nodelist
+  660  cd /usr/NX/
+  661  ls
+  662  cd var/
+  663  ll
+  664  tail log/nxserver.log 
+  665  tail log/nxerror.log 
+  666  tail -f log/nxerror.log 
+  667  nxserver --nodelist
+  668  nxserver --updatenode  10.10.10.113:4000
+  669  nxserver --help |grep update
+  670  nxserver --nodeupdate  10.10.10.113:4000
+  671  nxserver --nodedelete  10.10.10.113:4000
+  672  nxserver --nodedel  10.10.10.113:4000
+  673  history  |grep nodeadd
+  674  nxserver --nodeadd 10.10.0.113  --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  675  nxserver --nodelist
+  676  ssh root@login113
+  677  nxserver --nodelist
+  678  nxserver --nodeupdate  10.10.0.113:4000
+  679  nxserver --nodeupdate  10.10.10.111:4000
+  680  nxserver --help |grep rule
+  681  nxserver --help |grep kde
+  682  nxserver --help |grep LIST
+  683  nxserver --help |grep list
+  684  nxserver --resourcelist
+  685  nxserver --help |grep session
+  686  nxserver --help |grep rule
+  687  vim /usr/NX/etc/server.cfg
+  688  vim /usr/NX/etc/node.cfg
+  689  vim /usr/NX/etc/server.cfg
+  690  qstat
+  691  tail -f /usr/NX/var/log/nxserver.log 
+  692  nxserver --help |grep resouce
+  693  nxserver --help |grep list
+  694  nxserver --rulelist
+  695  nxserver --resourcelist
+  696  nxserver --help |grep session
+  697  nxserver --desktoplist
+  698  nxserver --resourcelist --class session
+  699  nxserver --restart
+  700  nxserver --resourcelist --class session
+  701  nxserver --help |grep session
+  702  nxserver --startsession --class session --type unix-kde
+  703  nxserver --ruleadd --class session --type unix-kde --value yes  --system
+  704  nxserver --resourcelist --class session
+  705  nxserver --restart
+  706  nxserver --resourcelist --class session
+  707  nxserver --ruleadd --class session --type unix-kde --value yes  
+  708  nxserver --resourcelist --class session
+  709  nxserver --ruleadd --class session --type physical-desktop  --value no
+  710  nxserver --resourcelist --class session
+  711  nxserver --ruleadd --class session --type unix-kde --value yes  
+  712  nxserver --resourcelist --class session
+  713  nxserver --ruleadd --class session --type unix-kde --value no
+  714  nxserver --ruleadd --class session --type unix-kde --value yes  
+  715  nxserver --resourcelist --class session
+  716  vim /usr/NX/etc/server.cfg
+  717  nxserver --ruleadd --class session --type unix-kde --value yes  
+  718  nxserver --resourcelist --class session
+  719  nxserver --restart
+  720  nxserver --resourcelist --class session
+  721  nxserver --ruleadd --class session --type unix-kde --value yes  
+  722  nxserver --restart
+  723  nxserver --resourcelist --class session
+  724  vim /usr/NX/etc/server.cfg
+  725  nxserver --ruleadd --class session --type unix-kde --value yes  
+  726  nxserver --resourcelist --class session
+  727  nxserver --ruleadd --class session --type unix-kde --value yes  
+  728  nxserver --restart
+  729  nxserver --ruleadd --class session --type unix-kde --value yes  
+  730  nxserver --ruleadd --class session --type unix-kde --value yes  --system
+  731  nxserver --resourcelist --class session
+  732  nxserver --ruleadd --class session --type unix-kde --value yes --system
+  733  nxserver --resourcelist --class session
+  734  nxserver --ruleadd --class session --type unix-gnome --value no  --system
+  735  nxserver --resourcelist --class session
+  736  nxserver --ruleadd --class session --type unix-kde --value yes --system
+  737  nxserver --resourcelist --class session
+  738  nxserver --ruleadd --class session --type unix-gnome --value yes  --system
+  739  nxserver --resourcelist --class session
+  740  nxserver --list
+  741  nxserver --list |wc -l
+  742  vim /usr/NX/etc/server.cfg
+  743  nxserver --list|grep fengwei
+  744  nxserver --list|grep gzdeng
+  745  nxserver --list
+  746  cd /usr/NX/
+  747  ls
+  748  cd var/
+  749  ls
+  750  cd log/
+  751  ls
+  752  tail -f nxserver.log 
+  753  cat  nxserver.log  |grep wang
+  754  cat /var/log/messages 
+  755  nxserver --broadcast 'The loginnode will reboot after 5 mins ,Please save your data and logout !Thank you '
+  756  cd /usr/NX/
+  757  ls
+  758  cd var/
+  759  ls
+  760  cd log/
+  761  ls
+  762  ll -lrt
+  763  tail -f nxerror.log 
+  764  tail -f nxserver.log 
+  765  tail -f nxerror.log 
+  766  ls
+  767  tail -f nxd.log 
+  768  tail -f /var/log/messages 
+  769  cd /usr/NX/
+  770  ls
+  771  cd var/
+  772  ls
+  773  cd log/
+  774  ll -lrt
+  775  tail -f nxerror.log 
+  776  tail -f nxserver.log 
+  777  tail -f nxerror.log 
+  778  clear
+  779  nxserver --list
+  780  nxserver --list|grep nanshi
+  781  nxserver --help
+  782  nxserver --help |grep connect
+  783  nxserver --help |less
+  784  nxserver --status
+  785  nxserver --nodelist
+  786  nxserver --list
+  787  nxserver --restart
+  788  nxserver --list
+  789  nxserver --nodelist
+  790  cd /usr/NX/
+  791  ls
+  792  cd var/
+  793  ls
+  794  cd log/
+  795  ls
+  796  ll -lrt
+  797  tail -f nxserver.log
+  798  tail -f nxerror.log 
+  799  nxserver --version
+  800  cd /usr/NX/
+  801  ls
+  802  cd rt
+  803  cd etc/
+  804  ls
+  805  vim server.cfg
+  806  vim server.lic
+  807  vim node.lic
+  808  nxserver --version
+  809  nxserver --help
+  810  nxserver --subscription
+  811  ls
+  812  vim server.lic
+  813  vim node.lic
+  814  vim version 
+  815  pwd
+  816  history  |grep nxserver
+  817  nxserver --broadcast 'The loginnode will reboot after 5 mins ,Please save your data and logout !Thank you '
+  818  nxserver --stop
+  819  qdel 31155 31156 31157 31158 31159 31162 31163 31182 31194 31202 31268 31279
+  820  history  |grep nxserver
+  821  nxserver --list
+  822  nxserver --start
+  823  ip addr
+  824  history  |grep broad
+  825  nxserver --broadcast 'The system will closed in 5 minutes ,please save your data and logout the system ,Thank you for your support.'
+  826  nxserver --stop
+  827  /etc/init.d/paramon restart
+  828  ip addr
+  829  cd /etc/sysconfig/network-scripts/
+  830  ls
+  831  vim ifcfg-em2 
+  832  vim ifcfg-em1
+  833  /etc/init.d/dhcpd restart
+  834  /etc/init.d/dhcpd start
+  835  service  network restart
+  836  ip addr
+  837  nxserver --status
+  838   nxserver --resourcelist --class session
+  839   nxserver --startsession --class session --type unix-kde
+  840  nxserver --start
+  841  nxserver --status
+  842   nxserver --ruleadd --class session --type unix-kde --value yes  --system
+  843    nxserver  --ruledel  enable-multinode
+  844  nxserver --nodelist
+  845  nxserver --ruleadd --class feature --type manual-node-selection --value yes --system
+  846   nxserver --ruleadd  --class feature --type enable-multinode  --value yes --system
+  847  nxserver --nodeadd login113 --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  848  nxserver --nodelist
+  849  nxserver --list
+  850  nxserver --start
+  851  nxserver --list
+  852  history |grep nxserver
+  853  nxserver --nodelist
+  854  nxserver --stop
+  855  ip addr
+  856  cd /etc/sysconfig/network-scripts/
+  857  ls
+  858  vim ifcfg-em2 
+  859  ifdown  em2
+  860  ifup  em2
+  861  ip addr
+  862  cd /etc/sysconfig/network-scripts/
+  863  ls
+  864  vim ifcfg-em2 
+  865  ifdown  em2
+  866  ifup  em2
+  867  ip addr
+  868  vim ifcfg-em2 
+  869  ifdown  em2
+  870  ifup  em2
+  871  vim ifcfg-em2 
+  872  history  |grep nxserver
+  873  nxserver --nodelist
+  874  ping 10.10.0.103
+  875  ping 10.10.10.103
+  876  ls
+  877  nxserver --nodelist
+  878  nxserver --status
+  879  nxserver --nodedel login113:4000
+  880  nxserver --nodeadd 10.10.0.113  --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  881  nxserver --nodeadd 10.10.0.112  --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  882  nxserver --nodelist
+  883  nxserver --nodeadd 10.10.0.111  --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  884  nxserver --nodeadd 10.10.0.110  --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  885  ping 10.10.0.110
+  886  nxserver --nodeadd 10.10.0.110  --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  887  nxserver --nodelist
+  888  nxserver --help|grep start
+  889  nxserver --nodestart 10.10.0.110:4000
+  890  nxserver --nodelist
+  891  nxserver --restart
+  892  nxserver --nodelist
+  893  nxserver --nodestart 10.10.0.110:4000
+  894  nxserver --nodelist
+  895  history |grep del
+  896   nxserver --nodedel login110:4000
+  897   nxserver --nodedel 10.10.0.110:4000
+  898  nxserver --nodelist
+  899  nxserver --nodeadd 10.10.0.110  --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  900  nxserver --nodelist
+  901  nxserver --list
+  902  nxserver --nodelist
+  903  nxserver --list
+  904  nxserver --nodelist
+  905  history  |grep nxserver
+  906  nxserver --nodelist
+  907  nxserver --nodedel 10.10.0.111:4000
+  908  nxserver --nodeadd 10.10.10.111  --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  909  nxserver --nodedel 10.10.0.110:4000
+  910  nxserver --nodeadd 10.10.10.110  --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  911  nxserver --nodedel 10.10.0.110:4000
+  912  nxserver --nodeadd 10.10.10.110  --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  913  nxserver --nodedel 10.10.10.110:4000
+  914  nxserver --nodeadd 10.10.10.110  --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  915  nxserver --list
+  916  nxserver --nodeadd 10.10.10.110  --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  917  nxserver --nodedel 10.10.10.110:4000
+  918  nxserver --nodeadd 10.10.10.110  --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  919  nxserver --nodelist
+  920  nxserver --nodedel 10.10.0.112:4000
+  921  nxserver --nodeadd 10.10.10.112  --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  922  nxserver --nodelist
+  923  nxserver --nodedel 10.10.0.113:4000
+  924  nxserver --nodeadd 10.10.10.113  --protocol NX --port 4000 --load-balancing yes   --weight 100 --limit 100 --label welcome login
+  925  nxserver --nodelist
+  926  ip addr
+  927  nxserver --list
+  928  nxserver --message  5D49927504D71D9D1803C9E41D71F1F3 'please send  your email  to lxj@ipp.ac.cn,Thank you !'
+  929  nxserver --message  1D311F31DC3AB49D1DE38EF6BCD032A6  'please send  your email  to lxj@ipp.ac.cn,Thank you !'
+  930  nxserver --message  F7F128B189E681683EBF83886483530E  'please send  your email  to lxj@ipp.ac.cn,Thank you !'
+  931  nxserver --nodelist
+  932  nxserver --list
+  933  who
+  934  nxserver --help |grep sub
+  935  nxserver --subscription
+  936  nxserver --restart
+  937  nxserver --nodelist
+  938  nxserver --list
+  939  nxserver --nodelist
+  940  nxserver --restart
+  941  nxserver --nodelist
+  942  nxserver --list|grep zyli
+  943  nxserver --list|grep lizy
+  944  nxserver --list
+  945  nxserver --list |grep li
+  946  nxserver --list
+  947  nxserver --list |wc -l
+  948  vim /usr/NX/
+  949  vim /usr/NX/etc/server.cfg
+  950  nxserver --restart
+  951  nxserver --list |wc -l
+  952  nxserver --list 
+  953  nxserver --list |wc -l
+  954  nxserver --list |grep szhu
+  955  nxserver --list |grep xiangjian
+  956  nxserver --list |grep lhang
+  957  balance  22 10.10.10.113:22 10.10.10.112:22 &
+  958  ping 10.10.10.112
+  959  ping 10.10.10.113
+  960  balance  22 10.10.10.113:22 10.10.10.112:22 &
+  961  ip addr
+  962  balance  22 10.10.10.113:22 10.10.10.112:22 &
+  963   yum install ipvsadm keepalived
+  964  balance  22 10.10.10.113:22 10.10.10.112:22 &
+  965  balance  3022 10.10.10.113:22 10.10.10.112:22 &
+  966  lsof  -i 22
+  967  lsof  -i:22
+  968  nxserver --list
+  969  nxserver --list |grep 
+  970  nxserver --help |grep ter
+  971  nxserver --help |grep termi
+  972  nxserver --terminate wuyanbin 
+  973  nxserver --list |grep wuyanbin
+  974  nxserver --terminate wuyanbin 
+  975  nxserver --list |grep niuly
+  976  nxserver --list |grep zhangxk
+  977  nxserver --list |grep niuly
+  978  /etc/init.d/gmond start
+  979  ps -ef |grep paramon
+  980  telnet 127.0.0.10089|grep CLUSTER
+  981  nc 127.0.0.10089|grep CLUSTER
+  982  cat < /dev/tcp/127.0.0.1/10089 |grep CLUSTER
+  983  EXIT
+  984  exit
+  985  cat < /dev/tcp/127.0.0.1/10089 |grep HOST
+  986  cat /etc/paratera/pcnt.conf 
+  987  exit
+  988  vim /etc/hosts
+  989  cd /var/www/
+  990  ls
+  991  cd html/
+  992  last
+  993  last |less
+  994  nxserver --nodelist
+  995  ls
+  996  rpm -qa |grep nomachine
+  997  history  |grep rpm
+  998  history  |grep nomachine
+  999  ls
+ 1000  rpm -qa |grep nomachine
+ 1001  history 
+ 1002  history  >history.log

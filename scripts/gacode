@@ -1,0 +1,38 @@
+安装过程： 
+（1）配置相关的环境变量
+export GACODE_PLATFORM=SHENMA （这个是可以随便命名的，）
+export GACODE_ROOT=/project/gacode （gacode所在的路径）
+. $GACODE_ROOT/shared/bin/gacode_setup 
+（2）确定程序需要的编译器，数学库，并行库 （根据不同的集群环境需要修改的）
+参考文件/project/gacode/shared/install/make.inc.SHENMA
+# Compilers 
+FC = mpif90 -I $(GACODE_ROOT)/modules -I${NETCDF_ROOT}/include   （NETCDF_ROOT是神马上netcdf的安装目录）
+F77 = mpif90 
+FOMP = -fopenmp 
+FMATH = -fdefault-real-8 -J $(GACODE_ROOT)/modules 
+FOPT = -march=native -mfpmath=sse -fomit-frame-pointer -O3 
+FDEBUG = -O -Wall -Wunderflow -W -finit-real=nan -fbounds-check -ffpe-trap=invalid,zero,overflow 
+# System math libraries 
+LMATH = /pkg/GotoBLAS2/libgoto2.a   （这是libgoto2.a的安装路径）
+# OPTIONAL NetCDF: 
+#NETCDF=-L /pkg/netcdf/4.2.1.1/gcc-4.4/lib -lnetcdf 
+#NETCDF_INC=-I /pkg/netcdf/4.2.1.1/gcc-4.4/include 
+NETCDF= ${NETCDF_FLIBS}    (神马上netcdf库文件所在的路径)
+NETCDF_INC= ${NETCDF_CFLAGS} （神马上netcdf的头文件所在的路径）
+# Archive 
+ARCH = ar cr 
+（3）创建各个模块install目录下的配置文件
+（4）module load   compiler/gcc/4.4    mpi/openmpi/1.6.3 3    netcdf/4.1.3
+（5）make (或者make OPT=。。。)即可
+注意事项：
+（1）    确保集群程序所在环境有安装程序需要的编译器，netcdf数学库，并行库  
+ （2）make.inc.*文件根据相应的环境进行修改
+ （3）编译过程中各个模块需要的配置文件
+
+
+安装过程中遇到一些和*。SHENMA相关的错误，只要配置文件搞好，就可以了
+
+另外，拷贝了/project/gacode/gyro/src/gyro_nl_fft.stub.f90过来，但是在后来的编译中好像没有用到这些。
+另外，编译的时候会生成*.MOD在modules目录下，例如math下面的mod可以删除。
+
+目录中如果有mod这样的文件，会出现m2c这样的命令，其实是不需要的，%o:%mod可以米面这样的错误。出现的原因是源码中包含这样的mod文件

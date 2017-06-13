@@ -1,0 +1,30 @@
+#
+# LDAPv3
+# base <uid=liuxj,ou=people,dc=hpc,dc=ipp,dc=ac,dc=cn> with scope subtree
+# filter: (objectclass=*)
+
+# liuxj, people, hpc.ipp.ac.cn
+dn: uid=liuxj,ou=people,dc=hpc,dc=ipp,dc=ac,dc=cn
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: liuxj
+sn: liuxj
+givenName: liuxj
+cn: liuxj
+displayName: liuxj
+uidNumber: 616
+gidNumber: 100
+gecos: liuxj
+loginShell: /bin/bash
+homeDirectory: /home/liuxj
+shadowExpire: -1
+shadowFlag: 0
+shadowWarning: 7
+shadowMin: 0
+shadowMax: 99999
+shadowLastChange: 16027
+
+# search result
+search: 2
+result: 0 Success

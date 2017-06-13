@@ -1,0 +1,100 @@
+#%Module1.0
+#####################################################################
+##
+## by Salmon
+## this module is directed to the latest version of MPI TRANSP. PPPL version 15645. by S. Ding, Feb2012
+##
+proc ModulesHelp { } {
+        puts stderr "\t  Transp"
+}
+module-whatis "transp"
+module load compiler/gcc/4.4 hdf5/1.8.10 netcdf/4.2.1.1 fftw/2.1.5 pgplot/5.2 mdsplus/5.0 mpi/openmpi/1.6.3 scalapack/2.0.2 blaslapack/3.4.2
+ 
+#set ROOT /project/transp
+#set ROOT /scratch/sding/trans
+
+setenv MPI_ENABLE TRUE
+#setenv MPI_ENABLE FAlSE
+setenv FORTRAN_VARIANT  GCC
+setenv GCC_VERSION  4.4
+
+
+
+setenv TRANSPROOT /install/build/liuxj/source/transp 
+setenv TRANSPHOME /scratch/liuxj/transphome
+
+#setenv TRANSPROOT $ROOT/sding_build/svn/transp
+#setenv TRANSPHOME $ROOT/sding_build/transp
+setenv M2C ' '
+setenv WORKROOT   $env(TRANSPHOME)
+setenv PREACTDIR  $env(TRANSPHOME)/preact
+setenv ADASDIR    $env(TRANSPHOME)/adas
+setenv DBGDIR  $env(TRANSPHOME)/debug
+
+setenv LOGDIR  $env(TRANSPHOME)/log
+setenv TMPDIR  $env(WORKROOT)/tmp
+setenv DATADIR  $env(TRANSPHOME)/data
+setenv CONFIGDIR  $env(TRANSPHOME)/config
+
+setenv CODESYSDIR  $env(TRANSPROOT)/codesys
+setenv LOCAL  $env(TRANSPHOME)/$env(FORTRAN_VARIANT)
+
+setenv WORKDIR  /scratch/liuxj/transp/Runs
+#setenv RESULTDIR  $env(HOME)/transp/Results
+setenv RESULTDIR  $env(TRANSPHOME)/result
+
+
+setenv SB  $env(TRANSPROOT)/bin
+setenv SC  $env(CODESYSDIR)/csh
+setenv XE  $env(LOCAL)/exe
+ 
+prepend-path PATH $env(XE)
+prepend-path PATH $env(SB)
+prepend-path PATH $env(CODESYSDIR)/qcsh
+prepend-path PATH $env(SC)
+
+
+setenv WORKSTATION_TYPE  LINUX
+
+# For xtranspin
+setenv XTRANSPIN  $env(CODESYSDIR)/transpin
+setenv XTRANSPIN_TOK  east
+#
+setenv TERM  xterm
+
+setenv TERMINAL_TYPE  XTERM
+setenv GETLINE_EDITOR  TRUE
+setenv NETCDF_PLN  TRUE
+setenv RPLOT_CACHE  TRUE
+setenv NAG_DP  other/naglink.a
+
+#setenv FTN_TRAILER  "-L$env(F90_HOME)/lib/lib64 -lgfortran "
+#setenv FTN_MAIN  /pkg/gcc/4.6.0/lib/gcc/x86_64-centos-linux/4.6.0/libgfortranbegin.a
+#setenv CPP_TRAILER  "-L$env(F90_HOME)/lib/lib64 -lstdc++ -lgcc_s -lgcc"
+setenv LOADER_TRAILER  " -L$env(LOCAL)/other  -lreadline -lhistory -ltermcap $env(NETCDF_CLIBS)"
+setenv  CPP_TRAILER  "-L/usr/lib/gcc/x86_64-redhat-linux/4.4.7/ -lstdc++"
+setenv  FTN_TRAILER  "-L/usr/lib/gcc/x86_64-redhat-linux/4.4.7/ -lgfortran "
+setenv  FTN_MAIN   /usr/lib/gcc/x86_64-redhat-linux/4.4.7/libgfortranbegin.a
+setenv L_FFTW  "$env(FFTW_FLIBS)"
+setenv L_RFFTW  "$env(FFTW_RFLIBS)"
+setenv SUPERLU_ROOT  /pkg/superlu/4.1/gcc-4.4
+setenv L_SUPERLU  "-L$env(SUPERLU_ROOT)/lib -lsuperlu_4.1"
+setenv SUPERLU_4  1
+setenv L_F2C  " -lf2c"
+setenv L_JETPPF  lib/nb_dummy.a
+# for mpi
+setenv L_SCALAPACK  "$env(SCALAPACK_LIBS)"
+setenv L_BLACS  "/pkg/blacs/lib/blacs.a /pkg/blacs/lib/blacsF77.a /pkg/blacs/lib/blacsc.a"
+#
+setenv  NETCDF_ROOT "$env(NETCDF_DIR)"
+setenv L_BLAS  "$env(BLAS_LIBS)"
+setenv L_LAPACK  "$env(LAPACK_LIBS)"
+setenv MDSLIB  "$env(MDSPLUS_LIBS)"
+setenv L_NETCDF  "$env(NETCDF_FLIBS)"
+setenv L_MDSPLUS  "$env(MDSPLUS_LIBS)"
+setenv L_HDF  "lib/hdf_dummy.a"
+
+setenv UIDPATH  $env(LOCAL)/uid/%U
+setenv L_PGPLOT  "$env(PGPLOT_LIBS)"
+setenv L_X11  "-L/usr/X11R6/lib64 -lX11"
+

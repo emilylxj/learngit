@@ -1,0 +1,51 @@
+--prefix=/pkg/petsc/3.3-p5-mumps/$PRG_ENV --with-cc=icc  --with-cxx=icpc --with-fc=ifort  
+
+
+module load compiler/intel/2013  mpi/openmpi/1.4.2
+./configure --prefix=/pkg/petsc/3.3-p6-openmpi/${PRG_ENV} --with-cc=mpicc  --with-cxx=mpicxx --with-fc=mpif90   --with-blas-lapack-dir=/pkg/intel/composerxe/mkl/lib/intel64   --with-scalapack-dir=/pkg/intel/composerxe/mkl/lib/intel64 --with-blacs-dir=/pkg/intel/composerxe/mkl/lib/intel64  
+
+./configure --prefix=/pkg/petsc/3.3-p6-openmpi/${PRG_ENV} --with-mpi-dir=/pkg/openmpi/1.4.2/intel-13/  --download-fftw=yes --download-f-blas-lapack=yes --download-blacs=yes --download-scalapack=yes --download-mumps=yes  --with-netcdf-include=${NETCDF_DIR}/include   --with-netcdf-lib=${NETCDF_DIR}/lib  --download-hdf5=yes >& configure.log1 &
+
+./configure CC=icc CXX=icpc F77=ifort FC=ifort --prefix=/pkg/openmpi/1.4.2/${PRG_ENV} --with-openib=/usr --enable-openib-connectx-xrc --enable-mpi-thread-multiple --with-threads --with-hwloc --enable-heterogeneous --enable-binaries --with-devel-headers
+
+./configure --prefix=/pkg/petsc/3.3-p6-openmpi/${PRG_ENV} --with-mpi-dir=/pkg/openmpi/1.4.2/intel-13/  --download-f-blas-lapack=yes --download-blacs=yes --download-scalapack=yes --download-mumps=yes --download-ptscotch=yes  >& configure.log1 &
+
+
+./configure   --with-mpi-dir=/pkg/openmpi/1.4.2/intel-13/  --download-fftw=yes --download-f-blas-lapack=yes --download-blacs=yes --download-scalapack=yes --download-mumps=yes  --with-netcdf-dir=${NETCDF_DIR}    --download-hdf5=yes >& configure.log1 &
+
+
+tmp:
+./configure   --with-mpi-dir=/pkg/openmpi/1.4.2/intel-13/  --download-fftw=yes --download-f-blas-lapack=yes --download-blacs=yes --download-scalapack=yes --download-mumps=yes --download-ptscotch=yes --with-netcdf-dir=${NETCDF_DIR} --download-hdf5=yes &>configure.log3
+
+last install
+
+1) compiler/intel/2013   2) mpi/openmpi/1.4.2     3) hdf5/1.8.10           4) netcdf/4.1.3
+
+./configure --prefix=/pkg/petsc/3.3-p6-openmpi/${PRG_ENV} --with-mpi-dir=/pkg/openmpi/1.4.2/intel-13/  --download-f-blas-lapack=yes --download-blacs=yes --download-scalapack=yes --download-mumps=yes  --download-ptscotch=yes  --download-fftw=yes  --download-hdf5=yes --with-netcdf-dir=${NETCDF_DIR}  >& configure.log1 &
+./configure --with-cc=icc  --with-cxx=icpc --with-fc=ifort  --prefix=/pkg/petsc/3.3/${PRG_ENV}  --with-mpi=0 --download-f-blas-lapack=yes --download-blacs=yes --download-scalapack=yes --download-mumps=yes  --download-ptscotch=yes  --download-fftw=yes  --download-hdf5=yes --download-netcdf=yes --download-hypre=yes  >& configure.log1 &
+
+
+./configure --with-cc=icc  --with-cxx=icpc --with-fc=ifort  --prefix=/pkg/petsc/3.3/${PRG_ENV}    --download-openmpi=yes  --download-f-blas-lapack=yes --download-blacs=yes --download-scalapack=yes --download-mumps=yes  --download-ptscotch=yes  --download-fftw=yes  --download-hdf5=yes --download-netcdf=yes --download-hypre=yes  >& configure.log1 &
+
+
+$ ./configure PETSC_ARCH=linux-impi-intel \
+--prefix=/pkg/petsc/3.3/${PRG_ENV}\
+--with-cc=mpiicc \
+--with-cxx=mpiicpc \
+--with-fc=mpiifort \
+--with-blas-lapack-dir=/pkg/intel/composer_xe_2015.0.090/mkl/lib/intel64/ \
+--download-scalapack=yes \
+--download-mumps=yes  \
+--download-ptscotch=yes  \
+--download-fftw=yes  \
+--download-hdf5=yes  \
+--download-netcdf=yes  \
+--download-hypre=yes  >& configure.log1 &
+
+
+./configure PETSC_ARCH=linux-impi-intel --prefix=/pkg/petsc/3.3/${PRG_ENV}--with-cc=mpiicc --with-cxx=mpiicpc --with-fc=mpiifort  --with-mpi-lib=${MPI_ROOT}/intel64/lib --with-mpi-include=${MPI_ROOT}/intel64/include --with-mpi=1 --with-mpi-compilers=mpicc  --with-blas-lapack-dir=/pkg/intel/composer_xe_2015.0.090/mkl/lib/intel64/ --download-scalapack=yes --download-mumps=yes  --download-ptscotch=yes  --download-fftw=yes  --download-hdf5=yes  --download-netcdf=yes  --download-hypre=yes  >& configure.log1 &
+
+checking whether a simple MPI-IO program can be linked... no
+configure: error: unable to link a simple MPI-IO application
+./configure PETSC_ARCH=linux-impi-intel --prefix=/pkg/petsc/3.3/${PRG_ENV}  --with-cc=mpiicc --with-cxx=mpiicpc --with-fc=mpiifort --with-mpi-lib=${MPI_ROOT}/intel64/lib/libmpi.a --with-mpi-include=${MPI_ROOT}/intel64/include --with-mpi=1 --with-mpi-compilers=mpicc --with-blas-lapack-dir=/pkg/intel/composer_xe_2015.0.090/mkl/lib/intel64/  --with-blacs=pkg/intel/composer_xe_2015.0.090/mkl/lib/intel64/  --with-debugging=0 --download-scalapack=yes --download-mumps=yes  --with-netcdf-dir=${NETCDF_DIR} --download-hypre=yes &>configure.log1 &
+

@@ -1,0 +1,66 @@
+Linux users
+In Linux I always download the original source code of PGPLOT from its  homepage, and install the package manually (at the time of writting these notes, the latest version is pgplot5.2.tar.gz). For this to work properly, the appropriate X11 files must be available in your machine. I also install gfortran as the Fortran compiler. Both tasks can be performed executing:
+
+•Fedora:
+$ sudo yum install libX11-devel
+$ sudo yum install gcc-gfortran
+ 
+•Ubuntu:
+$ sudo apt-get install xorg-dev
+$ sudo apt-get install gfortran
+ 
+•CentOS:
+$ sudo yum install libX11-devel
+$ sudo yum install gcc-gfortran
+ 
+•OpenSUSE:
+$ sudo zypper install xorg-X11-devel
+$ sudo zypper install gcc-fortran
+ 
+•Debian:
+$ sudo apt-get install libX11-dev
+$ sudo apt-get install gfortran
+ 
+In order to install PGPLOT, I follow (with a minor but important modification: the use of gfortran instead of g77) the instructions given by T.J. Pearson to install this library under Linux, which can be summarized as follows: 1.Download the distribution file  pgplot5.2.tar.gz 
+2.Decompress and extract the contents of the distribution file in a source directory. In this sense, I always place pgplot5.2.tar.gz under /usr/local/src. Note that for this opperation it is probably required that you have root privileges, unless you have write access to the directories. I indicate that by changing the prompt symbol from $ to #. You can either log in as root (using su in Fedora and CentOS, or using sudo su in Ubuntu), or use sudo in front of the following commands:
+# cd /usr/local/src
+# mv ~/Downloads/pgplot5.2.tar.gz .
+# tar zxvf pgplot5.2.tar.gz
+ The last command will create /usr/local/src/pgplot and subdirectories. 
+3.Create the directory where PGPLOT will be actually installed:
+# mkdir /usr/local/pgplot
+# cd /usr/local/pgplot
+ 
+4.Copy the file drivers.list from the source directory to the installation directory:
+# cp /usr/local/src/pgplot/drivers.list .
+ 
+5.Edit that file and remove the exclamation mark (first column of each row) in front of the following graphic devices: /PS, /VPS, /CPS, /VCPS and /XServe. The resulting file is also available here: drivers.list. 
+6.Create the makefile. From the installation directory /usr/local/pgplot execute:
+# /usr/local/src/pgplot/makemake /usr/local/src/pgplot linux g77_gcc_aout 
+7.Edit the file makefile and change the line:
+FCOMPL=g77
+ by
+FCOMPL=gfortran
+ 
+8.Compile the source files:
+# make
+# make cpg
+# make clean
+ 
+
+After the installation, make sure that the expected environment variables are properly set (at least PGPLOT_DIR must exist; PGPLOT_DEV is also quite useful): 
+$ export PGPLOT_DIR=/usr/local/pgplot
+$ export PGPLOT_DEV=/Xserve
+ It is useful to introduce those definitions in the .bashrc file at the home directory of the user. 
+
+Execute any of the demos in order to check that everything is fine: 
+$ /usr/local/pgplot/pgdemo1
+$ /usr/local/pgplot/pgdemo2
+$ /usr/local/pgplot/pgdemo3
+...
+
+
+Finally, compile your own code. For example, is gfortran was the fortran compiler employed to install PGPLOT, the following command should work: 
+$ gfortran -o outputFileName inputFotranFile.f -L/usr/local/pgplot -L/usr/X11/lib -lpgplot -lX11
+ Note that you should use the same fortran compiler to install PGPLOT and to compile your own files. In the above example the X11 library was assumed to be installed in /usr/X11/lib. If this is not the case, include the actual directory using -L/directory_path_to_libX11 in the compilation instead of -L/usr/X11/lib above.
+

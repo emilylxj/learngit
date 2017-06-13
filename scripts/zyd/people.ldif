@@ -1,0 +1,4307 @@
+# extended LDIF
+#
+# LDAPv3
+# base <ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn> with scope subtree
+# filter: (objectclass=*)
+# requesting: ALL
+#
+
+# People, shenma.ipp.ac.cn
+dn: ou=People,dc=shenma,dc=ipp,dc=ac,dc=cn
+objectClass: organizationalUnit
+objectClass: top
+ou: People
+
+# backup, people, shenma.ipp.ac.cn
+dn: cn=backup,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: backup
+gidNumber: 505
+givenName: backup
+homeDirectory: /home/users/backup
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: backup
+uid: backup
+uidNumber: 1148
+
+# bjding, people, shenma.ipp.ac.cn
+dn: cn=bjding,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: bjding
+gidNumber: 505
+givenName: ding
+homeDirectory: /home/users/bjding
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: bojiang
+uid: bjding
+uidNumber: 1010
+
+# blhao, people, shenma.ipp.ac.cn
+dn: cn=blhao,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: blhao
+gidNumber: 505
+givenName: hao
+homeDirectory: /home/users/blhao
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: baolong
+uid: blhao
+uidNumber: 1059
+
+# bonoli, people, shenma.ipp.ac.cn
+dn: cn=bonoli,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: bonoli
+gidNumber: 509
+givenName: Paul
+homeDirectory: /home/users/bonoli
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: Bonoli
+uid: bonoli
+uidNumber: 1130
+
+# caijianqing, people, shenma.ipp.ac.cn
+dn: cn=caijianqing,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: caijianqing
+gidNumber: 505
+givenName: cai
+homeDirectory: /home/users/caijianqing
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: jianqing
+uid: caijianqing
+uidNumber: 1071
+
+# canxin, people, shenma.ipp.ac.cn
+dn: cn=canxin,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: canxin
+gidNumber: 509
+givenName: shi
+homeDirectory: /home/users/canxin
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: canxin
+uid: canxin
+uidNumber: 1119
+
+# chenbr, people, shenma.ipp.ac.cn
+dn: cn=chenbr,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: chenbr
+gidNumber: 511
+givenName: chen
+homeDirectory: /home/users/chenbr
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: baoren
+uid: chenbr
+uidNumber: 1160
+
+# chenky, people, shenma.ipp.ac.cn
+dn: cn=chenky,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: chenky
+gidNumber: 505
+givenName: chen
+homeDirectory: /home/users/chenky
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: kaiyun
+uid: chenky
+uidNumber: 1021
+
+# chenmq, people, shenma.ipp.ac.cn
+dn: cn=chenmq,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: chenmq
+gidNumber: 509
+givenName: chen
+homeDirectory: /home/users/chenmq
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: minqi
+uid: chenmq
+uidNumber: 1152
+
+# chlei, people, shenma.ipp.ac.cn
+dn: cn=chlei,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: chlei
+gidNumber: 505
+givenName: chen
+homeDirectory: /home/users/chlei
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: lei
+uid: chlei
+uidNumber: 1126
+
+# chunan, people, shenma.ipp.ac.cn
+dn: cn=chunan,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: chunan
+gidNumber: 505
+givenName: chu
+homeDirectory: /home/users/chunan
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: nan
+uid: chunan
+uidNumber: 1125
+
+# ckpan, people, shenma.ipp.ac.cn
+dn: cn=ckpan,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: ckpan
+gidNumber: 505
+givenName: pan
+homeDirectory: /home/users/ckpan
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: chengkang
+uid: ckpan
+uidNumber: 1164
+
+# crwu, people, shenma.ipp.ac.cn
+dn: cn=crwu,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: crwu
+gidNumber: 505
+givenName: wu
+homeDirectory: /home/users/crwu
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: chengrui
+uid: crwu
+uidNumber: 1058
+
+# cxman, people, shenma.ipp.ac.cn
+dn: cn=cxman,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: cxman
+gidNumber: 505
+givenName: cheng
+homeDirectory: /home/users/cxman
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: xiaoman
+uid: cxman
+uidNumber: 1128
+
+# dave, people, shenma.ipp.ac.cn
+dn: cn=dave,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: dave
+gidNumber: 100
+givenName: dave
+homeDirectory: /home/users/dave
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: dave
+uid: dave
+uidNumber: 1012
+
+# DDNssh, people, shenma.ipp.ac.cn
+dn: cn=DDNssh,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: DDNssh
+gidNumber: 509
+givenName: sun
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: shaohua
+uid: DDNssh
+uidNumber: 1133
+homeDirectory: /home/users/DDNssh
+
+# dfkong, people, shenma.ipp.ac.cn
+dn: cn=dfkong,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: dfkong
+gidNumber: 505
+givenName: kong
+homeDirectory: /home/users/dfkong
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: defeng
+uid: dfkong
+uidNumber: 1092
+
+# didier, people, shenma.ipp.ac.cn
+dn: cn=didier,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: didier
+gidNumber: 509
+givenName: MOREAU
+homeDirectory: /home/users/didier
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: Didier
+uid: didier
+uidNumber: 1154
+
+# dinglj, people, shenma.ipp.ac.cn
+dn: cn=dinglj,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: dinglj
+gidNumber: 505
+givenName: ding
+homeDirectory: /home/users/dinglj
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: lijie
+uid: dinglj
+uidNumber: 1129
+
+# elder, people, shenma.ipp.ac.cn
+dn: cn=elder,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: elder
+gidNumber: 509
+givenName: david
+homeDirectory: /home/users/elder
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: elder
+uid: elder
+uidNumber: 1002
+
+# erhui, people, shenma.ipp.ac.cn
+dn: cn=erhui,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: erhui
+gidNumber: 505
+givenName: wang
+homeDirectory: /home/users/erhui
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: erhui
+uid: erhui
+uidNumber: 1104
+
+# fengwei, people, shenma.ipp.ac.cn
+dn: cn=fengwei,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: fengwei
+gidNumber: 505
+givenName: feng
+homeDirectory: /home/users/fengwei
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: wei
+uid: fengwei
+uidNumber: 1109
+
+# fujia, people, shenma.ipp.ac.cn
+dn: cn=fujia,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: fujia
+gidNumber: 505
+givenName: fu
+homeDirectory: /home/users/fujia
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: jia
+uid: fujia
+uidNumber: 1145
+
+# fwyao, people, shenma.ipp.ac.cn
+dn: cn=fwyao,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: fwyao
+gidNumber: 505
+givenName: yao
+homeDirectory: /home/users/fwyao
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: fangwei
+uid: fwyao
+uidNumber: 1037
+
+# gaoff, people, shenma.ipp.ac.cn
+dn: cn=gaoff,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: gaoff
+gidNumber: 505
+givenName: gao
+homeDirectory: /home/users/gaoff
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: fangfang
+uid: gaoff
+uidNumber: 1095
+
+# gaowei, people, shenma.ipp.ac.cn
+dn: cn=gaowei,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: gaowei
+gidNumber: 505
+givenName: gao
+homeDirectory: /home/users/gaowei
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: wei
+uid: gaowei
+uidNumber: 1057
+
+# Garofalo Andrea, people, shenma.ipp.ac.cn
+dn: cn=Garofalo Andrea,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: Garofalo Andrea
+gidNumber: 509
+givenName: Garofalo
+homeDirectory: /home/users/Andrea
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: Andrea
+uid: Andrea
+uidNumber: 1064
+
+# glsong, people, shenma.ipp.ac.cn
+dn: cn=glsong,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: glsong
+gidNumber: 509
+givenName: song
+homeDirectory: /home/users/glsong
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: guiliang
+uid: glsong
+uidNumber: 1120
+
+# hanp, people, shenma.ipp.ac.cn
+dn: cn=hanp,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: hanp
+gidNumber: 505
+givenName: han
+homeDirectory: /home/users/hanp
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: peng
+uid: hanp
+uidNumber: 1108
+
+# heyang, people, shenma.ipp.ac.cn
+dn: cn=heyang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: heyang
+gidNumber: 509
+givenName: he
+homeDirectory: /home/users/heyang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yang
+uid: heyang
+uidNumber: 1115
+
+# hhwang, people, shenma.ipp.ac.cn
+dn: cn=hhwang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: hhwang
+gidNumber: 505
+givenName: wang
+homeDirectory: /home/users/hhwang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: huihui
+uid: hhwang
+uidNumber: 1089
+
+# hscai, people, shenma.ipp.ac.cn
+dn: cn=hscai,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: hscai
+gidNumber: 511
+givenName: cai
+homeDirectory: /home/users/hscai
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: huishan
+uid: hscai
+uidNumber: 1153
+
+# Huang Jie, people, shenma.ipp.ac.cn
+dn: cn=Huang Jie,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: Huang Jie
+gidNumber: 505
+givenName: Huang
+homeDirectory: /home/users/hjie
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: Jie
+uid: hjie
+uidNumber: 1001
+
+# huangkai, people, shenma.ipp.ac.cn
+dn: cn=huangkai,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: huangkai
+gidNumber: 505
+givenName: huang
+homeDirectory: /home/users/huangkai
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: kai
+uid: huangkai
+uidNumber: 1094
+
+# hyueheng, people, shenma.ipp.ac.cn
+dn: cn=hyueheng,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: hyueheng
+gidNumber: 506
+givenName: huang
+homeDirectory: /home/users/hyueheng
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yueheng
+uid: hyueheng
+uidNumber: 1028
+
+# inkyang, people, shenma.ipp.ac.cn
+dn: cn=inkyang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: inkyang
+gidNumber: 506
+givenName: yang
+homeDirectory: /home/users/inkyang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: xiaoqing
+uid: inkyang
+uidNumber: 1036
+
+# jiamanni, people, shenma.ipp.ac.cn
+dn: cn=jiamanni,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: jiamanni
+gidNumber: 509
+givenName: jia
+homeDirectory: /home/users/jiamanni
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: manni
+uid: jiamanni
+uidNumber: 1046
+
+# jianbinliu, people, shenma.ipp.ac.cn
+dn: cn=jianbinliu,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: jianbinliu
+gidNumber: 505
+givenName: liu
+homeDirectory: /home/users/jianbinliu
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: jianbin
+uid: jianbinliu
+uidNumber: 1155
+
+# jieli, people, shenma.ipp.ac.cn
+dn: cn=jieli,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: jieli
+gidNumber: 505
+givenName: li
+homeDirectory: /home/users/jieli
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: jie
+uid: jieli
+uidNumber: 1062
+
+# jwright, people, shenma.ipp.ac.cn
+dn: cn=jwright,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: jwright
+gidNumber: 509
+givenName: John
+homeDirectory: /home/users/jwright
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: Wright
+uid: jwright
+uidNumber: 1143
+
+# kfgan, people, shenma.ipp.ac.cn
+dn: cn=kfgan,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: kfgan
+gidNumber: 505
+givenName: gan
+homeDirectory: /home/users/kfgan
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: kaifu
+uid: kfgan
+uidNumber: 1050
+
+# lanting, people, shenma.ipp.ac.cn
+dn: cn=lanting,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: lanting
+gidNumber: 505
+givenName: lan
+homeDirectory: /home/users/lanting
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: ting
+uid: lanting
+uidNumber: 1102
+
+# laody, people, shenma.ipp.ac.cn
+dn: cn=laody,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: laody
+gidNumber: 505
+givenName: lao
+homeDirectory: /home/users/laody
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: dingyu
+uid: laody
+uidNumber: 1132
+
+# lhang, people, shenma.ipp.ac.cn
+dn: cn=lhang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: lhang
+gidNumber: 505
+givenName: li
+homeDirectory: /home/users/lhang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: hang
+uid: lhang
+uidNumber: 1040
+
+# limiaohui, people, shenma.ipp.ac.cn
+dn: cn=limiaohui,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: limiaohui
+gidNumber: 505
+givenName: li
+homeDirectory: /home/users/limiaohui
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: miaohui
+uid: limiaohui
+uidNumber: 1016
+
+# liuhq, people, shenma.ipp.ac.cn
+dn: cn=liuhq,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: liuhq
+gidNumber: 505
+givenName: liu
+homeDirectory: /home/users/liuhq
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: haiqing
+uid: liuhq
+uidNumber: 1043
+
+# liuli, people, shenma.ipp.ac.cn
+dn: cn=liuli,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: liuli
+gidNumber: 509
+givenName: liu
+homeDirectory: /home/users/liuli
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: li
+uid: liuli
+uidNumber: 1162
+
+# liuzy, people, shenma.ipp.ac.cn
+dn: cn=liuzy,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: liuzy
+gidNumber: 509
+givenName: liu
+homeDirectory: /home/users/liuzy
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: zhaoyang
+uid: liuzy
+uidNumber: 1116
+
+# ljunjun, people, shenma.ipp.ac.cn
+dn: cn=ljunjun,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: ljunjun
+gidNumber: 509
+givenName: li
+homeDirectory: /home/users/ljunjun
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: junjun
+uid: ljunjun
+uidNumber: 1121
+
+# lqxu, people, shenma.ipp.ac.cn
+dn: cn=lqxu,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: lqxu
+gidNumber: 505
+givenName: xu
+homeDirectory: /home/users/lqxu
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: liqing
+uid: lqxu
+uidNumber: 1097
+
+# lulin, people, shenma.ipp.ac.cn
+dn: cn=lulin,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: lulin
+gidNumber: 505
+givenName: lu
+homeDirectory: /home/users/lulin
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: lin
+uid: lulin
+uidNumber: 1106
+
+# luobing, people, shenma.ipp.ac.cn
+dn: cn=luobing,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: luobing
+gidNumber: 505
+givenName: luo
+homeDirectory: /home/users/luobing
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: bing
+uid: luobing
+uidNumber: 1150
+
+# lxiaochun, people, shenma.ipp.ac.cn
+dn: cn=lxiaochun,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: lxiaochun
+gidNumber: 505
+givenName: li
+homeDirectory: /home/users/lxiaochun
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: xiaochun
+uid: lxiaochun
+uidNumber: 1005
+
+# lyingzhe, people, shenma.ipp.ac.cn
+dn: cn=lyingzhe,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: lyingzhe
+gidNumber: 509
+givenName: li
+homeDirectory: /home/users/lyingzhe
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yingzhe
+uid: lyingzhe
+uidNumber: 1151
+
+# maxuebin, people, shenma.ipp.ac.cn
+dn: cn=maxuebin,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: maxuebin
+gidNumber: 505
+givenName: ma
+homeDirectory: /home/users/maxuebin
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: xuebin
+uid: maxuebin
+uidNumber: 1127
+
+# minxiao, people, shenma.ipp.ac.cn
+dn: cn=minxiao,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: minxiao
+gidNumber: 505
+givenName: xiao
+homeDirectory: /home/users/minxiao
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: min
+uid: minxiao
+uidNumber: 1098
+
+# mzzheng, people, shenma.ipp.ac.cn
+dn: cn=mzzheng,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: mzzheng
+gidNumber: 505
+givenName: men
+homeDirectory: /home/users/mzzheng
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: zongzheng
+uid: mzzheng
+uidNumber: 1165
+
+# nanshi, people, shenma.ipp.ac.cn
+dn: cn=nanshi,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: nanshi
+gidNumber: 505
+givenName: shi
+homeDirectory: /home/users/nanshi
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: nan
+uid: nanshi
+uidNumber: 1080
+
+# niugj, people, shenma.ipp.ac.cn
+dn: cn=niugj,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: niugj
+gidNumber: 505
+givenName: niu
+homeDirectory: /home/users/niugj
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: guojian
+uid: niugj
+uidNumber: 1006
+
+# niuly, people, shenma.ipp.ac.cn
+dn: cn=niuly,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: niuly
+gidNumber: 505
+givenName: niu
+homeDirectory: /home/users/niuly
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: luying
+uid: niuly
+uidNumber: 1018
+
+# PEYSSON, people, shenma.ipp.ac.cn
+dn: cn=PEYSSON,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: PEYSSON
+gidNumber: 509
+givenName: Yves
+homeDirectory: /home/users/PEYSSON
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: PEYSSON
+uid: PEYSSON
+uidNumber: 1041
+
+# pfzhang, people, shenma.ipp.ac.cn
+dn: cn=pfzhang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: pfzhang
+gidNumber: 505
+givenName: zhang
+homeDirectory: /home/users/pfzhang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: pengfei
+uid: pfzhang
+uidNumber: 1039
+
+# puyong, people, shenma.ipp.ac.cn
+dn: cn=puyong,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: puyong
+gidNumber: 505
+givenName: pu
+homeDirectory: /home/users/puyong
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yong
+uid: puyong
+uidNumber: 1096
+
+# pxchang, people, shenma.ipp.ac.cn
+dn: cn=pxchang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: pxchang
+gidNumber: 505
+givenName: chang
+homeDirectory: /home/users/pxchang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: pengxiang
+uid: pxchang
+uidNumber: 1136
+
+# qiuql, people, shenma.ipp.ac.cn
+dn: cn=qiuql,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: qiuql
+gidNumber: 505
+givenName: qiu
+homeDirectory: /home/users/qiuql
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: qinglai
+uid: qiuql
+uidNumber: 1063
+
+# qwang, people, shenma.ipp.ac.cn
+dn: cn=qwang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: qwang
+gidNumber: 505
+givenName: wang
+homeDirectory: /home/users/qwang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: qi
+uid: qwang
+uidNumber: 1149
+
+# rjzhou, people, shenma.ipp.ac.cn
+dn: cn=rjzhou,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: rjzhou
+gidNumber: 505
+givenName: zhou
+homeDirectory: /home/users/rjzhou
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: ruijie
+uid: rjzhou
+uidNumber: 1056
+
+# rlzhang, people, shenma.ipp.ac.cn
+dn: cn=rlzhang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: rlzhang
+gidNumber: 509
+givenName: zhang
+homeDirectory: /home/users/rlzhang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: ruili
+uid: rlzhang
+uidNumber: 1117
+
+# shebit, people, shenma.ipp.ac.cn
+dn: cn=shebit,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: shebit
+gidNumber: 509
+givenName: yang
+homeDirectory: /home/users/shebit
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yang
+uid: shebit
+uidNumber: 1025
+
+# shikeyi, people, shenma.ipp.ac.cn
+dn: cn=shikeyi,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: shikeyi
+gidNumber: 509
+givenName: shi
+homeDirectory: /home/users/shikeyi
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: keyi
+uid: shikeyi
+uidNumber: 1079
+
+# shiraiwa, people, shenma.ipp.ac.cn
+dn: cn=shiraiwa,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: shiraiwa
+gidNumber: 509
+givenName: Syun'ichi
+homeDirectory: /home/users/shiraiwa
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: Shiraiwa
+uid: shiraiwa
+uidNumber: 1131
+
+# shisj, people, shenma.ipp.ac.cn
+dn: cn=shisj,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: shisj
+gidNumber: 509
+givenName: shi
+homeDirectory: /home/users/shisj
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: shenjia
+uid: shisj
+uidNumber: 1048
+
+# shuyudai, people, shenma.ipp.ac.cn
+dn: cn=shuyudai,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: shuyudai
+gidNumber: 509
+givenName: shu
+homeDirectory: /home/users/shuyudai
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yudai
+uid: shuyudai
+uidNumber: 1023
+
+# slliu, people, shenma.ipp.ac.cn
+dn: cn=slliu,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: slliu
+gidNumber: 505
+givenName: liu
+homeDirectory: /home/users/slliu
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: songlin
+uid: slliu
+uidNumber: 1052
+
+# stmao, people, shenma.ipp.ac.cn
+dn: cn=stmao,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: stmao
+gidNumber: 505
+givenName: mao
+homeDirectory: /home/users/stmao
+loginShell: /bin/tcsh
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: songtao
+uid: stmao
+uidNumber: 1053
+
+# sunap, people, shenma.ipp.ac.cn
+dn: cn=sunap,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: sunap
+gidNumber: 509
+givenName: sun
+homeDirectory: /home/users/sunap
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: aiping
+uid: sunap
+uidNumber: 1020
+
+# sunyj, people, shenma.ipp.ac.cn
+dn: cn=sunyj,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: sunyj
+gidNumber: 509
+givenName: sun
+homeDirectory: /home/users/sunyj
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yajuan
+uid: sunyj
+uidNumber: 1137
+
+# taolu, people, shenma.ipp.ac.cn
+dn: cn=taolu,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: taolu
+gidNumber: 505
+givenName: lu
+homeDirectory: /home/users/taolu
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: tao
+uid: taolu
+uidNumber: 1168
+
+# tfming, people, shenma.ipp.ac.cn
+dn: cn=tfming,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: tfming
+gidNumber: 505
+givenName: ming
+homeDirectory: /home/users/tfming
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: tingfeng
+uid: tfming
+uidNumber: 1139
+
+# thshi, people, shenma.ipp.ac.cn
+dn: cn=thshi,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: thshi
+gidNumber: 505
+givenName: shi
+homeDirectory: /home/users/thshi
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: tonghui
+uid: thshi
+uidNumber: 1011
+
+# tsfan, people, shenma.ipp.ac.cn
+dn: cn=tsfan,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: tsfan
+gidNumber: 509
+givenName: fan
+homeDirectory: /home/users/tsfan
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: tiefan
+uid: tsfan
+uidNumber: 1134
+
+# wangfeng, people, shenma.ipp.ac.cn
+dn: cn=wangfeng,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wangfeng
+gidNumber: 505
+givenName: wang
+homeDirectory: /home/users/wangfeng
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: feng
+uid: wangfeng
+uidNumber: 1007
+
+# wanghj, people, shenma.ipp.ac.cn
+dn: cn=wanghj,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wanghj
+gidNumber: 509
+givenName: wang
+homeDirectory: /home/users/wanghj
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: huajie
+uid: wanghj
+uidNumber: 1146
+
+# wangjiaqi, people, shenma.ipp.ac.cn
+dn: cn=wangjiaqi,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wangjiaqi
+gidNumber: 509
+givenName: wang
+homeDirectory: /home/users/wangjiaqi
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: jiaqi
+uid: wangjiaqi
+uidNumber: 1123
+
+# wangs, people, shenma.ipp.ac.cn
+dn: cn=wangs,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wangs
+gidNumber: 505
+givenName: wang
+homeDirectory: /home/users/wangs
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: sen
+uid: wangs
+uidNumber: 1147
+
+# wangxg, people, shenma.ipp.ac.cn
+dn: cn=wangxg,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wangxg
+gidNumber: 505
+givenName: wang
+homeDirectory: /home/users/wangxg
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: xiaoguang
+uid: wangxg
+uidNumber: 1081
+
+# wangzhenjiang, people, shenma.ipp.ac.cn
+dn: cn=wangzhenjiang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wangzhenjiang
+gidNumber: 511
+givenName: Zhenjiang
+homeDirectory: /home/users/wangzhenjiang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: Wang
+uid: wangzhenjiang
+uidNumber: 1135
+
+# weizy, people, shenma.ipp.ac.cn
+dn: cn=weizy,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: weizy
+gidNumber: 509
+givenName: wei
+homeDirectory: /home/users/weizy
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: zhiyuan
+uid: weizy
+uidNumber: 1124
+
+# wenjiawang, people, shenma.ipp.ac.cn
+dn: cn=wenjiawang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wenjiawang
+gidNumber: 505
+givenName: wen
+homeDirectory: /home/users/wenjiawang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: jiawang
+uid: wenjiawang
+uidNumber: 1105
+
+# wmq, people, shenma.ipp.ac.cn
+dn: cn=wmq,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wmq
+gidNumber: 505
+givenName: wu
+homeDirectory: /home/users/wmq
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: mhquan
+uid: wmq
+uidNumber: 1030
+
+# woodysu, people, shenma.ipp.ac.cn
+dn: cn=woodysu,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: woodysu
+gidNumber: 509
+givenName: su
+homeDirectory: /home/users/woodysu
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yabo
+uid: woodysu
+uidNumber: 1093
+
+# wwxu, people, shenma.ipp.ac.cn
+dn: cn=wwxu,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wwxu
+gidNumber: 505
+givenName: xu
+homeDirectory: /home/users/wwxu
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: weiwei
+uid: wwxu
+uidNumber: 1051
+
+# wxjing, people, shenma.ipp.ac.cn
+dn: cn=wxjing,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wxjing
+gidNumber: 509
+givenName: wang
+homeDirectory: /home/users/wxjing
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: xiaojing
+uid: wxjing
+uidNumber: 1042
+
+# wxwei, people, shenma.ipp.ac.cn
+dn: cn=wxwei,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wxwei
+gidNumber: 505
+givenName: wang
+homeDirectory: /home/users/wxwei
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: xiaowei
+uid: wxwei
+uidNumber: 1099
+
+# wyulei, people, shenma.ipp.ac.cn
+dn: cn=wyulei,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wyulei
+gidNumber: 509
+givenName: wang
+homeDirectory: /home/users/wyulei
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yulei
+uid: wyulei
+uidNumber: 1088
+
+# wzhibin, people, shenma.ipp.ac.cn
+dn: cn=wzhibin,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wzhibin
+gidNumber: 509
+givenName: wang
+homeDirectory: /home/users/wzhibin
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: zhibin
+uid: wzhibin
+uidNumber: 1138
+
+# wzxing, people, shenma.ipp.ac.cn
+dn: cn=wzxing,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wzxing
+gidNumber: 505
+givenName: wang
+homeDirectory: /home/users/wzxing
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: zhengxing
+uid: wzxing
+uidNumber: 1100
+
+# xhwang, people, shenma.ipp.ac.cn
+dn: cn=xhwang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xhwang
+gidNumber: 509
+givenName: wang
+homeDirectory: /home/users/xhwang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: xiaohong
+uid: xhwang
+uidNumber: 1091
+
+# xiangjian, people, shenma.ipp.ac.cn
+dn: cn=xiangjian,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xiangjian
+gidNumber: 509
+givenName: jian
+homeDirectory: /home/users/xiangjian
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: xiang
+uid: xiangjian
+uidNumber: 1141
+
+# xiaogang, people, shenma.ipp.ac.cn
+dn: cn=xiaogang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xiaogang
+gidNumber: 505
+givenName: liu
+homeDirectory: /home/users/xgliu
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: xiaogang
+uid: xgliu
+uidNumber: 1084
+
+# xiehai, people, shenma.ipp.ac.cn
+dn: cn=xiehai,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xiehai
+gidNumber: 505
+givenName: xie
+homeDirectory: /home/users/xiehai
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: hai
+uid: xiehai
+uidNumber: 1024
+
+# xietao, people, shenma.ipp.ac.cn
+dn: cn=xietao,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xietao
+gidNumber: 509
+givenName: xie
+homeDirectory: /home/users/xietao
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: tao
+uid: xietao
+uidNumber: 1118
+
+# xueerbing, people, shenma.ipp.ac.cn
+dn: cn=xueerbing,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xueerbing
+gidNumber: 509
+givenName: xue
+homeDirectory: /home/users/xueerbing
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: erbing
+uid: xueerbing
+uidNumber: 1075
+
+# xugl, people, shenma.ipp.ac.cn
+dn: cn=xugl,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xugl
+gidNumber: 509
+givenName: xu
+homeDirectory: /home/users/xugl
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: guoliang
+uid: xugl
+uidNumber: 1142
+
+# xuyp, people, shenma.ipp.ac.cn
+dn: cn=xuyp,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xuyp
+gidNumber: 505
+givenName: xu
+homeDirectory: /home/users/xuyp
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yuping
+uid: xuyp
+uidNumber: 1047
+
+# xuzong, people, shenma.ipp.ac.cn
+dn: cn=xuzong,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xuzong
+gidNumber: 505
+givenName: xu
+homeDirectory: /home/users/xuzong
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: zong
+uid: xuzong
+uidNumber: 1073
+
+# xzluo, people, shenma.ipp.ac.cn
+dn: cn=xzluo,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xzluo
+gidNumber: 509
+givenName: luo
+homeDirectory: /home/users/xzluo
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: xiuzhe
+uid: xzluo
+uidNumber: 1070
+
+# yanning, people, shenma.ipp.ac.cn
+dn: cn=yanning,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yanning
+gidNumber: 505
+givenName: yan
+homeDirectory: /home/users/yanning
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: ning
+uid: yanning
+uidNumber: 1103
+
+# yanqingh, people, shenma.ipp.ac.cn
+dn: cn=yanqingh,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yanqingh
+gidNumber: 509
+givenName: huang
+homeDirectory: /home/users/yanqingh
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yanqing
+uid: yanqingh
+uidNumber: 1161
+
+# yaoyc, people, shenma.ipp.ac.cn
+dn: cn=yaoyc,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yaoyc
+gidNumber: 509
+givenName: yao
+homeDirectory: /home/users/yaoyc
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yicun
+uid: yaoyc
+uidNumber: 1167
+
+# ybpei, people, shenma.ipp.ac.cn
+dn: cn=ybpei,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: ybpei
+gidNumber: 505
+givenName: pei
+homeDirectory: /home/users/ybpei
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: youbin
+uid: ybpei
+uidNumber: 1072
+
+# ycunli, people, shenma.ipp.ac.cn
+dn: cn=ycunli,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: ycunli
+gidNumber: 505
+givenName: li
+homeDirectory: /home/users/ycunli
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yongchun
+uid: ycunli
+uidNumber: 1068
+
+# yfliang, people, shenma.ipp.ac.cn
+dn: cn=yfliang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yfliang
+gidNumber: 509
+givenName: yfliang
+homeDirectory: /home/users/yfliang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yfliang
+uid: yfliang
+uidNumber: 1156
+
+# yfwang, people, shenma.ipp.ac.cn
+dn: cn=yfwang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yfwang
+gidNumber: 505
+givenName: wang
+homeDirectory: /home/users/yfwang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yifeng
+uid: yfwang
+uidNumber: 1163
+
+# yinxh, people, shenma.ipp.ac.cn
+dn: cn=yinxh,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yinxh
+gidNumber: 505
+givenName: yin
+homeDirectory: /home/users/yinxh
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: xianghui
+uid: yinxh
+uidNumber: 1158
+
+# ylli, people, shenma.ipp.ac.cn
+dn: cn=ylli,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: ylli
+gidNumber: 505
+givenName: li
+homeDirectory: /home/users/ylli
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yongliang
+uid: ylli
+uidNumber: 1065
+
+# ymwang, people, shenma.ipp.ac.cn
+dn: cn=ymwang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: ymwang
+gidNumber: 505
+givenName: wang
+homeDirectory: /home/users/ymwang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yumin
+uid: ymwang
+uidNumber: 1122
+
+# yqhu, people, shenma.ipp.ac.cn
+dn: cn=yqhu,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yqhu
+gidNumber: 505
+givenName: hu
+homeDirectory: /home/users/yqhu
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yanqiang
+uid: yqhu
+uidNumber: 1061
+
+# yuanyi, people, shenma.ipp.ac.cn
+dn: cn=yuanyi,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yuanyi
+gidNumber: 505
+givenName: yuan
+homeDirectory: /home/users/yuanyi
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yi
+uid: yuanyi
+uidNumber: 1110
+
+# yukailiu, people, shenma.ipp.ac.cn
+dn: cn=yukailiu,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yukailiu
+gidNumber: 505
+givenName: liu
+homeDirectory: /home/users/yukailiu
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yukai
+uid: yukailiu
+uidNumber: 1157
+
+# yulimin, people, shenma.ipp.ac.cn
+dn: cn=yulimin,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yulimin
+gidNumber: 509
+givenName: yu
+homeDirectory: /home/users/yulimin
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: limin
+uid: yulimin
+uidNumber: 1076
+
+# zgdeng, people, shenma.ipp.ac.cn
+dn: cn=zgdeng,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zgdeng
+gidNumber: 505
+givenName: deng
+homeDirectory: /home/users/zgdeng
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: guozhong
+uid: zgdeng
+uidNumber: 1069
+
+# zhangjh, people, shenma.ipp.ac.cn
+dn: cn=zhangjh,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhangjh
+gidNumber: 505
+givenName: zhang
+homeDirectory: /home/users/zhangjh
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: jiahui
+uid: zhangjh
+uidNumber: 1078
+
+# maoaohua, People, shenma.ipp.ac.cn
+dn: cn=maoaohua,ou=People,dc=shenma,dc=ipp,dc=ac,dc=cn
+gidNumber: 505
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: shan
+uidNumber: 1170
+cn: maoaohua
+givenName: mao
+homeDirectory: /home/users/maoaohua
+uid: maoaohua
+
+# zhangt, people, shenma.ipp.ac.cn
+dn: cn=zhangt,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhangt
+gidNumber: 505
+givenName: zhang
+homeDirectory: /home/users/zhangt
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: tao
+uid: zhangt
+uidNumber: 1014
+
+# zhangxianmei, people, shenma.ipp.ac.cn
+dn: cn=zhangxianmei,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhangxianmei
+gidNumber: 509
+givenName: zhang
+homeDirectory: /home/users/zhangxianmei
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: xianmei
+uid: zhangxianmei
+uidNumber: 1077
+
+# zhangxk, people, shenma.ipp.ac.cn
+dn: cn=zhangxk,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhangxk
+gidNumber: 505
+givenName: zhang
+homeDirectory: /home/users/zhangxk
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: xiaokang
+uid: zhangxk
+uidNumber: 1112
+
+# zhaoxy, people, shenma.ipp.ac.cn
+dn: cn=zhaoxy,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhaoxy
+gidNumber: 505
+givenName: zhao
+homeDirectory: /home/users/zhaoxy
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: xiaoyun
+uid: zhaoxy
+uidNumber: 1114
+
+# zhengt, people, shenma.ipp.ac.cn
+dn: cn=zhengt,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhengt
+gidNumber: 505
+givenName: zheng
+homeDirectory: /home/users/zhengt
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: ting
+uid: zhengt
+uidNumber: 1144
+
+# zhengzhen, people, shenma.ipp.ac.cn
+dn: cn=zhengzhen,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhengzhen
+gidNumber: 505
+givenName: zheng
+homeDirectory: /home/users/zhengzhen
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: zhen
+uid: zhengzhen
+uidNumber: 1166
+
+# zhlwang, people, shenma.ipp.ac.cn
+dn: cn=zhlwang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhlwang
+gidNumber: 505
+givenName: wang
+homeDirectory: /home/users/zhlwang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: zhaoliang
+uid: zhlwang
+uidNumber: 1055
+
+# zhonggq, people, shenma.ipp.ac.cn
+dn: cn=zhonggq,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhonggq
+gidNumber: 505
+givenName: zhong
+homeDirectory: /home/users/zhonggq
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: guoqiang
+uid: zhonggq
+uidNumber: 1019
+
+# zsyang, people, shenma.ipp.ac.cn
+dn: cn=zsyang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zsyang
+gidNumber: 505
+givenName: yang
+homeDirectory: /home/users/zsyang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: zhongshi
+uid: zsyang
+uidNumber: 1082
+
+# zwwu, people, shenma.ipp.ac.cn
+dn: cn=zwwu,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zwwu
+gidNumber: 505
+givenName: wu
+homeDirectory: /home/users/zwwu
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: zhenwei
+uid: zwwu
+uidNumber: 1159
+
+# zyifeng, people, shenma.ipp.ac.cn
+dn: cn=zyifeng,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zyifeng
+gidNumber: 509
+givenName: zheng
+homeDirectory: /home/users/zyifeng
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yifeng
+uid: zyifeng
+uidNumber: 1140
+
+# asipp_abs, people, shenma.ipp.ac.cn
+dn: uid=asipp_abs,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: asipp_abs
+displayName: asipp_abs
+gecos: asipp_abs
+gidNumber: 100
+givenName: asipp_abs
+homeDirectory: /home/users/asipp_abs
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15656
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: asipp_abs
+uid: asipp_abs
+uidNumber: 628
+
+# bgui, people, shenma.ipp.ac.cn
+dn: uid=bgui,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: bgui
+displayName: bgui
+gecos: bgui
+gidNumber: 506
+givenName: bgui
+homeDirectory: /home/users/bgui
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 16302
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: bgui
+uid: bgui
+uidNumber: 533
+
+# changjiaf, people, shenma.ipp.ac.cn
+dn: uid=changjiaf,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: changjiaf
+displayName: changjiaf
+gecos: changjiaf
+gidNumber: 505
+givenName: changjiaf
+homeDirectory: /home/users/changjiaf
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15526
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: changjiaf
+uid: changjiaf
+uidNumber: 619
+
+# chy35, people, shenma.ipp.ac.cn
+dn: uid=chy35,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: chy35
+displayName: chy35
+gecos: chy35
+gidNumber: 100
+givenName: chy35
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15421
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: chy35
+uid: chy35
+uidNumber: 530
+homeDirectory: /home/users/chy35
+
+# cliang, people, shenma.ipp.ac.cn
+dn: uid=cliang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: cliang
+displayName: cliang
+gecos: cliang
+gidNumber: 505
+givenName: cliang
+homeDirectory: /home/users/cliang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15933
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: cliang
+uid: cliang
+uidNumber: 622
+
+# csyscu, people, shenma.ipp.ac.cn
+dn: uid=csyscu,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: csyscu
+displayName: csyscu
+gecos: csyscu
+gidNumber: 100
+givenName: csyscu
+homeDirectory: /home/users/csyscu
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15174
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: csyscu
+uid: csyscu
+uidNumber: 568
+
+# cyliu, people, shenma.ipp.ac.cn
+dn: uid=cyliu,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: cyliu
+displayName: cyliu
+gecos: cyliu
+gidNumber: 100
+givenName: cyliu
+homeDirectory: /home/users/cyliu
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 16449
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: cyliu
+uid: cyliu
+uidNumber: 534
+
+# davidwu, people, shenma.ipp.ac.cn
+dn: uid=davidwu,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: davidwu
+displayName: davidwu
+gecos: davidwu
+gidNumber: 100
+givenName: davidwu
+homeDirectory: /home/users/davidwu
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 16198
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: davidwu
+uid: davidwu
+uidNumber: 576
+
+# FIDA, people, shenma.ipp.ac.cn
+dn: uid=FIDA,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: FIDA
+displayName: FIDA
+gecos: FIDA
+gidNumber: 100
+givenName: FIDA
+homeDirectory: /home/users/FIDA
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 16251
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: FIDA
+uid: FIDA
+uidNumber: 624
+
+# gksim, people, shenma.ipp.ac.cn
+dn: uid=gksim,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: gksim
+displayName: gksim
+gecos: gksim
+gidNumber: 506
+givenName: gksim
+homeDirectory: /home/users/gksim
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15311
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: gksim
+uid: gksim
+uidNumber: 593
+
+# gqwang, people, shenma.ipp.ac.cn
+dn: uid=gqwang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: gqwang
+displayName: gqwang
+gecos: gqwang
+gidNumber: 506
+givenName: gqwang
+homeDirectory: /home/users/gqwang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15336
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: gqwang
+uid: gqwang
+uidNumber: 600
+
+# gzjia, people, shenma.ipp.ac.cn
+dn: uid=gzjia,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: gzjia
+displayName: gzjia
+gecos: gzjia
+gidNumber: 506
+givenName: gzjia
+homeDirectory: /home/users/gzjia
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 16146
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: gzjia
+uid: gzjia
+uidNumber: 573
+
+# hgao, people, shenma.ipp.ac.cn
+dn: uid=hgao,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: hgao
+displayName: hgao
+gecos: hgao
+gidNumber: 506
+givenName: hgao
+homeDirectory: /home/users/hgao
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15407
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: hgao
+uid: hgao
+uidNumber: 591
+
+# hjscu, people, shenma.ipp.ac.cn
+dn: uid=hjscu,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: hjscu
+displayName: hjscu
+gecos: hjscu
+gidNumber: 100
+givenName: hjscu
+homeDirectory: /home/users/hjscu
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15174
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: hjscu
+uid: hjscu
+uidNumber: 567
+
+# hongqin, people, shenma.ipp.ac.cn
+dn: uid=hongqin,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: hongqin
+displayName: hongqin
+gecos: hongqin
+gidNumber: 100
+givenName: hongqin
+homeDirectory: /home/users/hongqin
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15218
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: hongqin
+uid: hongqin
+uidNumber: 584
+
+# hqwang, people, shenma.ipp.ac.cn
+dn: uid=hqwang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: hqwang
+displayName: hqwang
+gecos: hqwang
+gidNumber: 505
+givenName: hqwang
+homeDirectory: /home/users/hqwang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15532
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: hqwang
+uid: hqwang
+uidNumber: 617
+
+# hsi, people, shenma.ipp.ac.cn
+dn: uid=hsi,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: hsi
+displayName: hsi
+gecos: hsi
+gidNumber: 505
+givenName: hsi
+homeDirectory: /home/users/hsi
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15974
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: hsi
+uid: hsi
+uidNumber: 631
+
+# huangwl, people, shenma.ipp.ac.cn
+dn: uid=huangwl,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: huangwl
+displayName: huangwl
+gecos: huangwl
+gidNumber: 506
+givenName: huangwl
+homeDirectory: /home/users/huangwl
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15351
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: huangwl
+uid: huangwl
+uidNumber: 598
+
+# huyemin, people, shenma.ipp.ac.cn
+dn: uid=huyemin,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: huyemin
+displayName: huyemin
+gecos: huyemin
+gidNumber: 100
+givenName: huyemin
+homeDirectory: /home/users/huyemin
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15152
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: huyemin
+uid: huyemin
+uidNumber: 513
+
+# hxf, people, shenma.ipp.ac.cn
+dn: uid=hxf,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: hxf
+displayName: hxf
+gecos: hxf
+gidNumber: 100
+givenName: hxf
+homeDirectory: /home/users/hxf
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15785
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: hxf
+uid: hxf
+uidNumber: 535
+
+# jfwang, people, shenma.ipp.ac.cn
+dn: uid=jfwang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: jfwang
+displayName: jfwang
+gecos: jfwang
+gidNumber: 100
+givenName: jfwang
+homeDirectory: /home/users/jfwang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15166
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: jfwang
+uid: jfwang
+uidNumber: 536
+
+# jhuang, people, shenma.ipp.ac.cn
+dn: uid=jhuang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: jhuang
+displayName: jhuang
+gecos: jhuang
+gidNumber: 100
+givenName: jhuang
+homeDirectory: /home/users/jhuang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 16200
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: jhuang
+uid: jhuang
+uidNumber: 585
+
+# jlchen, people, shenma.ipp.ac.cn
+dn: uid=jlchen,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: jlchen
+displayName: jlchen
+gecos: jlchen
+gidNumber: 100
+givenName: jlchen
+homeDirectory: /home/users/jlchen
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15639
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: jlchen
+uid: jlchen
+uidNumber: 529
+
+# leexinxia, people, shenma.ipp.ac.cn
+dn: uid=leexinxia,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: leexinxia
+displayName: leexinxia
+gecos: leexinxia
+gidNumber: 100
+givenName: leexinxia
+homeDirectory: /home/users/leexinxia
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 16200
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: leexinxia
+uid: leexinxia
+uidNumber: 620
+
+# lgj, people, shenma.ipp.ac.cn
+dn: uid=lgj,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: lgj
+displayName: lgj
+gecos: lgj
+gidNumber: 505
+givenName: lgj
+homeDirectory: /home/users/lgj
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15510
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: lgj
+uid: lgj
+uidNumber: 602
+
+# lidehui, people, shenma.ipp.ac.cn
+dn: uid=lidehui,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: lidehui
+displayName: lidehui
+gecos: lidehui
+gidNumber: 100
+givenName: lidehui
+homeDirectory: /home/users/lidehui
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15153
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: lidehui
+uid: lidehui
+uidNumber: 522
+
+# ligq, people, shenma.ipp.ac.cn
+dn: uid=ligq,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: ligq
+displayName: ligq
+gecos: ligq
+gidNumber: 100
+givenName: ligq
+homeDirectory: /home/users/ligq
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15155
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: ligq
+uid: ligq
+uidNumber: 517
+
+# lihaode2007, people, shenma.ipp.ac.cn
+dn: uid=lihaode2007,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: lihaode2007
+displayName: lihaode2007
+gecos: lihaode2007
+gidNumber: 100
+givenName: lihaode2007
+homeDirectory: /home/users/lihaode2007
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15757
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: lihaode2007
+uid: lihaode2007
+uidNumber: 636
+
+# lijxpku, people, shenma.ipp.ac.cn
+dn: uid=lijxpku,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: lijxpku
+displayName: lijxpku
+gecos: lijxpku
+gidNumber: 100
+givenName: lijxpku
+homeDirectory: /home/users/lijxpku
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15167
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: lijxpku
+uid: lijxpku
+uidNumber: 557
+
+# linbinbin, people, shenma.ipp.ac.cn
+dn: uid=linbinbin,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: linbinbin
+displayName: linbinbin
+gecos: linbinbin
+gidNumber: 505
+givenName: linbinbin
+homeDirectory: /home/users/linbinbin
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15215
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: linbinbin
+uid: linbinbin
+uidNumber: 583
+
+# liujian, people, shenma.ipp.ac.cn
+dn: uid=liujian,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: liujian
+displayName: liujian
+gecos: liujian
+gidNumber: 100
+givenName: liujian
+homeDirectory: /home/users/liujian
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15443
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: liujian
+uid: liujian
+uidNumber: 610
+
+# liuxj, people, shenma.ipp.ac.cn
+dn: uid=liuxj,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: liuxj
+displayName: liuxj
+gecos: liuxj
+gidNumber: 100
+givenName: liuxj
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 16538
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: liuxj
+uid: liuxj
+uidNumber: 616
+homeDirectory: /home/users/liuxj
+mail: lxj@ipp.ac.cn
+
+# liuzhiyuan, people, shenma.ipp.ac.cn
+dn: uid=liuzhiyuan,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: liuzhiyuan
+displayName: liuzhiyuan
+gecos: liuzhiyuan
+gidNumber: 100
+givenName: liuzhiyuan
+homeDirectory: /home/users/liuzhiyuan
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15149
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: liuzhiyuan
+uid: liuzhiyuan
+uidNumber: 527
+
+# lshch, people, shenma.ipp.ac.cn
+dn: uid=lshch,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: lshch
+displayName: lshch
+gecos: lshch
+gidNumber: 100
+givenName: lshch
+homeDirectory: /home/users/lshch
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15266
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: lshch
+uid: lshch
+uidNumber: 539
+
+# lxj, people, shenma.ipp.ac.cn
+dn: uid=lxj,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: lxj
+displayName: lxj
+gecos: lxj
+gidNumber: 100
+givenName: lxj
+homeDirectory: /home/users/lxj
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 16507
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: lxj
+uid: lxj
+uidNumber: 540
+
+# lzp, people, shenma.ipp.ac.cn
+dn: uid=lzp,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: lzp
+displayName: lzp
+gecos: lzp
+gidNumber: 100
+givenName: lzp
+homeDirectory: /home/users/lzp
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15166
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: lzp
+uid: lzp
+uidNumber: 541
+
+# majun, people, shenma.ipp.ac.cn
+dn: uid=majun,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: majun
+displayName: majun
+gecos: majun
+gidNumber: 100
+givenName: majun
+homeDirectory: /home/users/majun
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15152
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: majun
+uid: majun
+uidNumber: 520
+
+# meneghini, people, shenma.ipp.ac.cn
+dn: uid=meneghini,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: meneghini
+displayName: meneghini
+gecos: meneghini
+gidNumber: 513
+givenName: meneghini
+homeDirectory: /home/users/meneghini
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15548
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: meneghini
+uid: meneghini
+uidNumber: 621
+
+# mgvh, people, shenma.ipp.ac.cn
+dn: uid=mgvh,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: mgvh
+displayName: mgvh
+gecos: mgvh
+gidNumber: 100
+givenName: mgvh
+homeDirectory: /home/users/mgvh
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15667
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: mgvh
+uid: mgvh
+uidNumber: 630
+
+# oujing, people, shenma.ipp.ac.cn
+dn: uid=oujing,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: oujing
+displayName: oujing
+gecos: oujing
+gidNumber: 100
+givenName: oujing
+homeDirectory: /home/users/oujing
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15225
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: oujing
+uid: oujing
+uidNumber: 518
+
+# qianjinping, people, shenma.ipp.ac.cn
+dn: uid=qianjinping,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: qianjinping
+displayName: qianjinping
+gecos: qianjinping
+gidNumber: 100
+givenName: qianjinping
+homeDirectory: /home/users/qianjinping
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15258
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: qianjinping
+uid: qianjinping
+uidNumber: 542
+
+# ray, people, shenma.ipp.ac.cn
+dn: uid=ray,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: ray
+displayName: ray
+gecos: ray
+gidNumber: 100
+givenName: ray
+homeDirectory: /home/users/ray
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 16203
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: ray
+uid: ray
+uidNumber: 589
+
+# rding, people, shenma.ipp.ac.cn
+dn: uid=rding,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: rding
+displayName: rding
+gecos: rding
+gidNumber: 505
+givenName: rding
+homeDirectory: /home/users/rding
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15680
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: rding
+uid: rding
+uidNumber: 632
+
+# renql, people, shenma.ipp.ac.cn
+dn: uid=renql,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: renql
+displayName: renql
+gecos: renql
+gidNumber: 513
+givenName: renql
+homeDirectory: /home/users/renql
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15174
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: renql
+uid: renql
+uidNumber: 515
+
+# rrzhang, people, shenma.ipp.ac.cn
+dn: uid=rrzhang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: rrzhang
+displayName: rrzhang
+gecos: rrzhang
+gidNumber: 100
+givenName: rrzhang
+homeDirectory: /home/users/rrzhang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 16364
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: rrzhang
+uid: rrzhang
+uidNumber: 543
+
+# sding, people, shenma.ipp.ac.cn
+dn: uid=sding,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: sding
+displayName: sding
+gecos: sding
+gidNumber: 505
+givenName: sding
+homeDirectory: /home/users/sding
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15174
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: sding
+uid: sding
+uidNumber: 569
+
+# sfmao, people, shenma.ipp.ac.cn
+dn: uid=sfmao,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: sfmao
+displayName: sfmao
+gecos: sfmao
+gidNumber: 509
+givenName: sfmao
+homeDirectory: /home/users/sfmao
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 16211
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: sfmao
+uid: sfmao
+uidNumber: 635
+
+# shixj, people, shenma.ipp.ac.cn
+dn: uid=shixj,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: shixj
+displayName: shixj
+gecos: shixj
+gidNumber: 504
+givenName: shixj
+homeDirectory: /home/users/shixj
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15259
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: shixj
+uid: shixj
+uidNumber: 507
+
+# solps, people, shenma.ipp.ac.cn
+dn: uid=solps,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: solps
+displayName: solps
+gecos: solps
+gidNumber: 506
+givenName: solps
+homeDirectory: /home/users/solps
+loginShell: /bin/tcsh
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15911
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: solps
+uid: solps
+uidNumber: 580
+
+# szhu, people, shenma.ipp.ac.cn
+dn: uid=szhu,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: szhu
+displayName: szhu
+gecos: szhu
+gidNumber: 100
+givenName: szhu
+homeDirectory: /home/users/szhu
+loginShell: /bin/tcsh
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15152
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: szhu
+uid: szhu
+uidNumber: 510
+
+# wangji, people, shenma.ipp.ac.cn
+dn: uid=wangji,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wangji
+displayName: wangji
+gecos: wangji
+gidNumber: 100
+givenName: wangji
+homeDirectory: /home/users/wangji
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15225
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: wangji
+uid: wangji
+uidNumber: 546
+
+# weiland, people, shenma.ipp.ac.cn
+dn: uid=weiland,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: weiland
+displayName: weiland
+gecos: weiland
+gidNumber: 100
+givenName: weiland
+homeDirectory: /home/users/weiland
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15782
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: weiland
+uid: weiland
+uidNumber: 606
+
+# wfguo, people, shenma.ipp.ac.cn
+dn: uid=wfguo,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wfguo
+displayName: wfguo
+gecos: wfguo
+gidNumber: 513
+givenName: wfguo
+homeDirectory: /home/users/wfguo
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 16200
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: wfguo
+uid: wfguo
+uidNumber: 516
+
+# wfq, people, shenma.ipp.ac.cn
+dn: uid=wfq,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wfq
+displayName: wfq
+gecos: wfq
+gidNumber: 505
+givenName: wfq
+homeDirectory: /home/users/wfq
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 16118
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: wfq
+uid: wfq
+uidNumber: 587
+
+# wliang, people, shenma.ipp.ac.cn
+dn: uid=wliang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wliang
+displayName: wliang
+gecos: wliang
+gidNumber: 100
+givenName: wliang
+homeDirectory: /home/users/wliang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15525
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: wliang
+uid: wliang
+uidNumber: 615
+
+# wtf, people, shenma.ipp.ac.cn
+dn: uid=wtf,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wtf
+displayName: wtf
+gecos: wtf
+gidNumber: 505
+givenName: wtf
+homeDirectory: /home/users/wtf
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15268
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: wtf
+uid: wtf
+uidNumber: 590
+
+# wubin, people, shenma.ipp.ac.cn
+dn: uid=wubin,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wubin
+displayName: wubin
+gecos: wubin
+gidNumber: 100
+givenName: wubin
+homeDirectory: /home/users/wubin
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15315
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: wubin
+uid: wubin
+uidNumber: 547
+
+# xiangn, people, shenma.ipp.ac.cn
+dn: uid=xiangn,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xiangn
+displayName: xiangn
+gecos: xiangn
+gidNumber: 100
+givenName: xiangn
+homeDirectory: /home/users/xiangn
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15155
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: xiangn
+uid: xiangn
+uidNumber: 509
+
+# xiaojy, people, shenma.ipp.ac.cn
+dn: uid=xiaojy,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xiaojy
+displayName: xiaojy
+gecos: xiaojy
+gidNumber: 100
+givenName: xiaojy
+homeDirectory: /home/users/xiaojy
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 16342
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: xiaojy
+uid: xiaojy
+uidNumber: 575
+
+# xiaotao, people, shenma.ipp.ac.cn
+dn: uid=xiaotao,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xiaotao
+displayName: xiaotao
+gecos: xiaotao
+gidNumber: 100
+givenName: xiaotao
+homeDirectory: /home/users/xiaotao
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15775
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: xiaotao
+uid: xiaotao
+uidNumber: 531
+
+# xiaty, people, shenma.ipp.ac.cn
+dn: uid=xiaty,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xiaty
+displayName: xiaty
+gecos: xiaty
+gidNumber: 100
+givenName: xiaty
+homeDirectory: /home/users/xiaty
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: xiaty
+uid: xiaty
+uidNumber: 519
+shadowLastChange: 16685
+
+# xjzhang, people, shenma.ipp.ac.cn
+dn: uid=xjzhang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xjzhang
+displayName: xjzhang
+gecos: xjzhang
+gidNumber: 100
+givenName: xjzhang
+homeDirectory: /home/users/xjzhang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15175
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: xjzhang
+uid: xjzhang
+uidNumber: 548
+
+# xuqian, people, shenma.ipp.ac.cn
+dn: uid=xuqian,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xuqian
+displayName: xuqian
+gecos: xuqian
+gidNumber: 505
+givenName: xuqian
+homeDirectory: /home/users/xuqian
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15447
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: xuqian
+uid: xuqian
+uidNumber: 607
+
+# xyf, people, shenma.ipp.ac.cn
+dn: uid=xyf,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xyf
+displayName: xyf
+gecos: xyf
+gidNumber: 506
+givenName: xyf
+homeDirectory: /home/users/xyf
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15317
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: xyf
+uid: xyf
+uidNumber: 595
+
+# xywang, people, shenma.ipp.ac.cn
+dn: uid=xywang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xywang
+displayName: xywang
+gecos: xywang
+gidNumber: 100
+givenName: xywang
+homeDirectory: /home/users/xywang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15154
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: xywang
+uid: xywang
+uidNumber: 532
+
+# yangcheng, people, shenma.ipp.ac.cn
+dn: uid=yangcheng,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yangcheng
+displayName: yangcheng
+gecos: yangcheng
+gidNumber: 100
+givenName: yangcheng
+homeDirectory: /home/users/yangcheng
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15155
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: yangcheng
+uid: yangcheng
+uidNumber: 521
+
+# yangulei, people, shenma.ipp.ac.cn
+dn: uid=yangulei,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yangulei
+displayName: yangulei
+gecos: yangulei
+gidNumber: 100
+givenName: yangulei
+homeDirectory: /home/users/yangulei
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: yangulei
+uid: yangulei
+uidNumber: 578
+shadowLastChange: 16617
+
+# yelei, people, shenma.ipp.ac.cn
+dn: uid=yelei,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yelei
+displayName: yelei
+gecos: yelei
+gidNumber: 506
+givenName: yelei
+homeDirectory: /home/users/yelei
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15156
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: yelei
+uid: yelei
+uidNumber: 502
+
+# yguo, people, shenma.ipp.ac.cn
+dn: uid=yguo,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yguo
+displayName: yguo
+gecos: yguo
+gidNumber: 100
+givenName: yguo
+homeDirectory: /home/users/yguo
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15371
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: yguo
+uid: yguo
+uidNumber: 549
+
+# yj, people, shenma.ipp.ac.cn
+dn: uid=yj,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yj
+displayName: yj
+gecos: yj
+gidNumber: 100
+givenName: yj
+homeDirectory: /home/users/yj
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15156
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: yj
+uid: yj
+uidNumber: 523
+
+# ylxiang, people, shenma.ipp.ac.cn
+dn: uid=ylxiang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: ylxiang
+displayName: ylxiang
+gecos: ylxiang
+gidNumber: 100
+givenName: ylxiang
+homeDirectory: /home/users/ylxiang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15685
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: ylxiang
+uid: ylxiang
+uidNumber: 633
+
+# ypchen, people, shenma.ipp.ac.cn
+dn: uid=ypchen,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: ypchen
+displayName: ypchen
+gecos: ypchen
+gidNumber: 100
+givenName: ypchen
+homeDirectory: /home/users/ypchen
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15240
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: ypchen
+uid: ypchen
+uidNumber: 550
+
+# yuzhi, people, shenma.ipp.ac.cn
+dn: uid=yuzhi,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yuzhi
+displayName: yuzhi
+gecos: yuzhi
+gidNumber: 504
+givenName: yuzhi
+homeDirectory: /home/users/yuzhi
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15722
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: yuzhi
+uid: yuzhi
+uidNumber: 501
+
+# ywj, people, shenma.ipp.ac.cn
+dn: uid=ywj,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: ywj
+displayName: ywj
+gecos: ywj
+gidNumber: 506
+givenName: ywj
+homeDirectory: /home/users/ywj
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15775
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: ywj
+uid: ywj
+uidNumber: 625
+
+# ywsun, people, shenma.ipp.ac.cn
+dn: uid=ywsun,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: ywsun
+displayName: ywsun
+gecos: ywsun
+gidNumber: 505
+givenName: ywsun
+homeDirectory: /home/users/ywsun
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15394
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: ywsun
+uid: ywsun
+uidNumber: 603
+
+# yzuo, people, shenma.ipp.ac.cn
+dn: uid=yzuo,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yzuo
+displayName: yzuo
+gecos: yzuo
+gidNumber: 506
+givenName: yzuo
+homeDirectory: /home/users/yzuo
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 16448
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: yzuo
+uid: yzuo
+uidNumber: 596
+
+# zhaixm, people, shenma.ipp.ac.cn
+dn: uid=zhaixm,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhaixm
+displayName: zhaixm
+gecos: zhaixm
+gidNumber: 100
+givenName: zhaixm
+homeDirectory: /home/users/zhaixm
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15622
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: zhaixm
+uid: zhaixm
+uidNumber: 623
+
+# zhangling, people, shenma.ipp.ac.cn
+dn: uid=zhangling,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhangling
+displayName: zhangling
+gecos: zhangling
+gidNumber: 100
+givenName: zhangling
+homeDirectory: /home/users/zhangling
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15789
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: zhangling
+uid: zhangling
+uidNumber: 552
+
+# zhangwei, people, shenma.ipp.ac.cn
+dn: uid=zhangwei,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhangwei
+displayName: zhangwei
+gecos: zhangwei
+gidNumber: 505
+givenName: zhangwei
+homeDirectory: /home/users/zhangwei
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 16287
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: zhangwei
+uid: zhangwei
+uidNumber: 618
+
+# zhoudeng, people, shenma.ipp.ac.cn
+dn: uid=zhoudeng,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhoudeng
+displayName: zhoudeng
+gecos: zhoudeng
+gidNumber: 100
+givenName: zhoudeng
+homeDirectory: /home/users/zhoudeng
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15285
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: zhoudeng
+uid: zhoudeng
+uidNumber: 511
+
+# zw, people, shenma.ipp.ac.cn
+dn: uid=zw,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zw
+gidNumber: 100
+homeDirectory: /home/users/zw
+loginShell: /bin/bash
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: zw
+uidNumber: 634
+
+# zxliu316, people, shenma.ipp.ac.cn
+dn: uid=zxliu316,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zxliu316
+displayName: zxliu316
+gecos: zxliu316
+gidNumber: 100
+givenName: zxliu316
+homeDirectory: /home/users/zxliu316
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: top
+shadowExpire: -1
+shadowFlag: 0
+shadowLastChange: 15233
+shadowMax: 99999
+shadowMin: 0
+shadowWarning: 7
+sn: zxliu316
+uid: zxliu316
+uidNumber: 554
+
+# zhuqingjun, people, shenma.ipp.ac.cn
+dn: cn=zhuqingjun,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhuqingjun
+gidNumber: 505
+givenName: zhu
+homeDirectory: /home/users/zhuqingjun
+loginShell: /bin/bash
+mail: zhuqingjun@ipp.ac.cn
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: qingjun
+telephoneNumber: 13965091659
+title: staff
+uid: zhuqingjun
+uidNumber: 1172
+
+# xzhu, people, shenma.ipp.ac.cn
+dn: cn=xzhu,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xzhu
+gidNumber: 505
+givenName: zhu
+homeDirectory: /home/users/xzhu
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: xiang
+uid: xzhu
+uidNumber: 1171
+
+# chenyq, people, shenma.ipp.ac.cn
+dn: cn=chenyq,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: chenyq
+gidNumber: 505
+givenName: chen
+homeDirectory: /home/users/chenyq
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: yuqing
+uid: chenyq
+uidNumber: 1173
+
+# cuil, people, shenma.ipp.ac.cn
+dn: uid=cuil,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: cuil
+gidNumber: 509
+givenName: cuil
+homeDirectory: /home/users/cuil
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: cuilang
+uid: cuil
+uidNumber: 1190
+
+# dongcf, people, shenma.ipp.ac.cn
+dn: uid=dongcf,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: dongcf
+gidNumber: 509
+givenName: dongcf
+homeDirectory: /home/users/dongcf
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: dongchunfeng
+uid: dongcf
+uidNumber: 1199
+
+# dongyb, people, shenma.ipp.ac.cn
+dn: uid=dongyb,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: dongyb
+gidNumber: 509
+givenName: dongyb
+homeDirectory: /home/users/dongyb
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: dongyunbo
+uid: dongyb
+uidNumber: 1193
+
+# gxiaotian, people, shenma.ipp.ac.cn
+dn: uid=gxiaotian,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: gxiaotian
+gidNumber: 509
+givenName: gxiaotian
+homeDirectory: /home/users/gxiaotian
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: gaoxiaotian
+uid: gxiaotian
+uidNumber: 1185
+
+# henglan, people, shenma.ipp.ac.cn
+dn: cn=henglan,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: henglan
+gidNumber: 505
+givenName: lan
+homeDirectory: /home/users/henglan
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: heng
+uid: henglan
+uidNumber: 1174
+
+# lihl, people, shenma.ipp.ac.cn
+dn: cn=lihl,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: lihl
+gidNumber: 509
+givenName: li
+homeDirectory: /home/users/lihl
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: haolong
+uid: lihl
+uidNumber: 1177
+
+# pzhu, people, shenma.ipp.ac.cn
+dn: cn=pzhu,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: pzhu
+gidNumber: 509
+givenName: zhu
+homeDirectory: /home/users/pzhu
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: ping
+uid: pzhu
+uidNumber: 1175
+
+# qfjiang, people, shenma.ipp.ac.cn
+dn: uid=qfjiang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: qfjiang
+gidNumber: 505
+givenName: qfjiang
+homeDirectory: /home/users/qfjiang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: jiangqingfeng
+uid: qfjiang
+uidNumber: 1191
+
+# shenwei, people, shenma.ipp.ac.cn
+dn: uid=shenwei,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: shenwei
+gidNumber: 505
+givenName: shenwei
+homeDirectory: /home/users/shenwei
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: shenwei
+uid: shenwei
+uidNumber: 1201
+
+# skcheng, people, shenma.ipp.ac.cn
+dn: cn=skcheng,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: skcheng
+gidNumber: 509
+givenName: cheng
+homeDirectory: /home/users/skcheng
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: shikui
+uid: skcheng
+uidNumber: 1178
+
+# smithsp, people, shenma.ipp.ac.cn
+dn: cn=smithsp,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: smithsp
+gidNumber: 509
+givenName: sterling
+homeDirectory: /home/users/smithsp
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: smith
+uid: smithsp
+uidNumber: 1181
+
+# songshd, people, shenma.ipp.ac.cn
+dn: uid=songshd,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: songshd
+gidNumber: 509
+givenName: songshd
+homeDirectory: /home/users/songshd
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: songshaodong
+uid: songshd
+uidNumber: 1197
+
+# wangyh, people, shenma.ipp.ac.cn
+dn: uid=wangyh,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wangyh
+gidNumber: 505
+givenName: wangyh
+homeDirectory: /home/users/wangyh
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: wangyahui
+uid: wangyh
+uidNumber: 1188
+
+# xuelei, people, shenma.ipp.ac.cn
+dn: uid=xuelei,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: xuelei
+gidNumber: 509
+givenName: xuelei
+homeDirectory: /home/users/xuelei
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: xuelei
+uid: xuelei
+uidNumber: 1194
+
+# yangqq, people, shenma.ipp.ac.cn
+dn: cn=yangqq,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yangqq
+gidNumber: 505
+givenName: yang
+homeDirectory: /home/users/yangqq
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: qingquan
+uid: yangqq
+uidNumber: 1090
+
+# yxting, people, shenma.ipp.ac.cn
+dn: cn=yxting,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: yxting
+gidNumber: 509
+givenName: yang
+homeDirectory: /home/users/yxting
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: xingting
+uid: yxting
+uidNumber: 1180
+
+# zengz, people, shenma.ipp.ac.cn
+dn: uid=zengz,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zengz
+gidNumber: 509
+givenName: zengz
+homeDirectory: /home/users/zengz
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: zengzhong
+uid: zengz
+uidNumber: 1184
+
+# zhangyang, people, shenma.ipp.ac.cn
+dn: uid=zhangyang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhangyang
+gidNumber: 505
+givenName: zhangyang
+homeDirectory: /home/users/zhangyang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: zhangyang
+uid: zhangyang
+uidNumber: 1187
+
+# zhangydd, people, shenma.ipp.ac.cn
+dn: uid=zhangydd,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhangydd
+gidNumber: 509
+givenName: zhangydd
+homeDirectory: /home/users/zhangydd
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: zhangyundong
+uid: zhangydd
+uidNumber: 1183
+
+# zhenggy, people, shenma.ipp.ac.cn
+dn: uid=zhenggy,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhenggy
+gidNumber: 509
+givenName: zhenggy
+homeDirectory: /home/users/zhenggy
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: zhengguoyao
+uid: zhenggy
+uidNumber: 1196
+
+# zhengjs, people, shenma.ipp.ac.cn
+dn: uid=zhengjs,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhengjs
+gidNumber: 509
+givenName: zhengjs
+homeDirectory: /home/users/zhengjs
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: zhengjiangshan
+uid: zhengjs
+uidNumber: 1189
+
+# zhwang, people, shenma.ipp.ac.cn
+dn: uid=zhwang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhwang
+gidNumber: 509
+givenName: zhwang
+homeDirectory: /home/users/zhwang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: wangzhanhui
+uid: zhwang
+uidNumber: 1192
+
+# zhouzq, people, shenma.ipp.ac.cn
+dn: uid=zhouzq,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhouzq
+gidNumber: 509
+givenName: zhouzq
+homeDirectory: /home/users/zhouzq
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: zhouzhaoqi
+uid: zhouzq
+uidNumber: 1186
+
+# zhangkai, people, shenma.ipp.ac.cn
+dn: uid=zhangkai,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: zhangkai
+gidNumber: 509
+givenName: zhangkai
+homeDirectory: /home/users/zhangkai
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: zhangkai
+uid: zhangkai
+uidNumber: 1198
+
+# wlhuang, people, shenma.ipp.ac.cn
+dn: cn=wlhuang,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: wlhuang
+gidNumber: 509
+givenName: wang
+homeDirectory: /home/users/wlhuang
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: wenlong
+uid: wlhuang
+uidNumber: 1179
+
+# panwei, people, shenma.ipp.ac.cn
+dn: uid=panwei,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: panwei
+gidNumber: 509
+givenName: panwei
+homeDirectory: /home/users/panwei
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: panwei
+uid: panwei
+uidNumber: 1200
+
+# lijx, people, shenma.ipp.ac.cn
+dn: uid=lijx,ou=people,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: lijx
+gidNumber: 509
+givenName: lijx
+homeDirectory: /home/users/lijx
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: lijiaxian
+uid: lijx
+uidNumber: 1195
+
+# huanghua, People, shenma.ipp.ac.cn
+dn: cn=huanghua,ou=People,dc=shenma,dc=ipp,dc=ac,dc=cn
+givenName: huang
+sn: hua
+cn: huanghua
+uid: huanghua
+gidNumber: 509
+homeDirectory: /home/users/huanghua
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 1169
+
+# liul, People, shenma.ipp.ac.cn
+dn: cn=liul,ou=People,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: liul
+gidNumber: 505
+givenName: liu
+homeDirectory: /home/users/liul
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: leng
+uid: liul
+uidNumber: 1045
+
+# guibin, People, shenma.ipp.ac.cn
+dn: cn=guibin,ou=People,dc=shenma,dc=ipp,dc=ac,dc=cn
+givenName: gui
+sn: bin
+cn: guibin
+uid: guibin
+uidNumber: 1003
+gidNumber: 506
+homeDirectory: /home/users/guibin
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+
+# efit, People, shenma.ipp.ac.cn
+dn: cn=efit,ou=People,dc=shenma,dc=ipp,dc=ac,dc=cn
+givenName: efit
+sn: efit-jianxiang
+cn: efit
+uid: efit
+uidNumber: 1004
+homeDirectory: /home/users/efit
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+gidNumber: 515
+
+# zyli, People, shenma.ipp.ac.cn
+dn: cn=zyli,ou=People,dc=shenma,dc=ipp,dc=ac,dc=cn
+givenName: li
+sn: zeyu
+cn: zyli
+uid: zyli
+uidNumber: 1009
+gidNumber: 509
+homeDirectory: /home/users/zyli
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+
+# hfdu, People, shenma.ipp.ac.cn
+dn: cn=hfdu,ou=People,dc=shenma,dc=ipp,dc=ac,dc=cn
+cn: hfdu
+gidNumber: 505
+givenName: du
+homeDirectory: /home/users/hfdu
+loginShell: /bin/bash
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+sn: hongfei
+uid: hfdu
+uidNumber: 1008
+
+# zyunpeng, People, shenma.ipp.ac.cn
+dn: cn=zyunpeng,ou=People,dc=shenma,dc=ipp,dc=ac,dc=cn
+givenName: zou
+sn: yunpeng
+cn: zyunpeng
+uid: zyunpeng
+uidNumber: 1013
+gidNumber: 509
+homeDirectory: /home/users/zyunpeng
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 256
+# numEntries: 255

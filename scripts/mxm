@@ -1,0 +1,49 @@
+    1  uname -a
+    2  ib_write_bw -F
+    3  ib_write_bw -F -a
+    4  ib_write_lat -F -a
+    5  ib_write_lat -F 
+    6  vim /etc/yum.repos.d/CentOS-Debuginfo.repo 
+    7  vim /etc/yum.repos.d/CentOS-Base.repo 
+    8  cp /home/home_ligq.tar.gz ./ &
+    9  ps aux
+   10  ls -lht 
+   11  watch ls -lht 
+   12  vim /etc/rc.local
+   13  cd /etc/sysconfig/network-scripts/
+   14  ls
+   15  vim ifcfg-ib0 
+   16  vim /etc/modprobe.d/ib_sdp.conf 
+   17  vim /etc/modprobe.d/ib_ipoib.conf 
+   18  ls
+   19  vim /etc/ntp.conf 
+   20  ls
+   21  ip addr
+   22  ibv_devinfo 
+   23  cd /install/repos/
+   24  ls
+   25  cd kernel_driver_2.6.32/
+   26  ls
+   27  cd MLNX_OFED_LINUX-1.5.3-3.1.0-rhel6.3-x86_64
+   28  ls
+   29  uname -a
+   30  ls
+   31  ./mlnxofedinstall 
+   32  export LC_ALL=C; ./mlnxofedinstall 
+   33  ibv_devinfo 
+   34  cd /scratch/yuzhi/
+   35  ls
+   36  cd Sandbox/
+   37  ls
+   38  source /usr/mpi/gcc/openmpi-1.4.3/bin/mpirun test_openmpi.exe 
+   39  /usr/mpi/gcc/openmpi-1.4.3/bin/mpirun test_openmpi.exe 
+   40  vim test_openmpi.pbs 
+   41  ibv_devinfo 
+   42  reboot
+   43  ibv_devinfo 
+   44  df 
+   45  ip addr
+   46  ibv_devinfo 
+   47  history 
+   48  history >> /scratch/liuxj/
+   49  history >> /scratch/liuxj/mxm

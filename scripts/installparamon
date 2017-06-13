@@ -1,0 +1,126 @@
+(1)ifconfig check IP addr and mac la:st 6 number
+(2)ping 135.57.46.122,make sure is ok
+(3) yum install *.rpm
+(4) fix four pcnt* and four psvr*
+
+vi /etc/paratera/pcnt.conf
+
+/* The cluster attributes. */
+cluster {
+  name = "C内网ip mac地址后六位"    如果mac地址后六位为111111  那么这里写C111111
+  owner = "C内网ip mac地址后六位"   如果mac地址后六位为111111  那么这里写C111111
+  latlong = "N40.02 E116.18"
+  url = "http://www.paratera.com"
+}
+
+
+/* Back-end server IP address and the udp_send_channel port number */
+udp_send_channel {
+  host = 内网ip
+  port = 10089
+}
+ and other file is same .
+
+(5) fix four psvr*
+
+vi /etc/paratera/pcnt.conf
+
+/* The cluster attributes. */
+cluster {
+  name = "C内网ip mac地址后六位"    如果mac地址后六位为111111  那么这里写C111111
+  owner = "C内网ip mac地址后六位"   如果mac地址后六位为111111  那么这里写C111111
+  latlong = "N40.02 E116.18"
+  url = "http://www.paratera.com"
+}
+
+
+/* Back-end server IP address and the udp_send_channel port number */
+udp_send_channel {
+  host = 内网ip
+  port = 10089
+}
+
+ and other file is same .
+
+
+(6)the server node :
+
+service paramon-svr start
+service paramon start
+
+(7)
+
+vi /opt/paratera/PARAMONCLI8/etc/plrtcli.conf
+SendQueName  = C内网ip mac地址后六位
+HostName     = 123.57.46.122
+ParaSvrIP    = 本机外网ip 
+
+(8)cd /opt/paratera/PARAMONCLI8
+. setp_paramon_cli ( or source setp_paramon_cli )
+/opt/paratera/PARAMONCLI8/start.sh
+
+(9)把/opt/paratera/PARAMONCLI8/start.sh添加到/etc/profile (开机启动)
+
+(10)for other node , execute the following command :
+
+pdsh shenma[101-161]  pcnt*  /etc/paratera 
+
+service paramon start 
+
+
+other command :
+
+telnet 127.0.0.1 10091 |grep 'HOST NAME'
+
+telnet 127.0.0.1 10091 
+
+telnet 127.0.0.1 10091 |grep CLUSTER
+
+ps aux |grep pl_
+
+sysctl -a|grep kernel.shm
+
+ll -h /opt/paratera/PARAMONCLI8/log/*
+
+nc 202.127.204.22 10091
+
+ps -aux|grep psvr 
+
+/opt/paratera/PARAMONCLI8/start.sh
+
+/opt/paratera/PARAMONCLI8/stop.sh
+
+chkconfig paramon-svr on
+
+然后把/opt/paratera/PARAMONCLI8/start.sh添加到/etc/profile (开机启动)  确保您的数据能够联通到我们公司 这样才会出周报
+
+功能集中在查看选项卡下面
+
+如果每个机器有ib卡 那么需要把/etc/paratera/utils.conf 里面第二行ib信息收集从off 改成on
+
+每个有ib的机器都要改 改完了 还需要 service paramon restart
+
+如果想看作业信息 那么需要更改登陆节点的/etc/paratera/utils.conf  里面有作业调度的模版 照着更改就行
+
+然后service paramon restart
+
+paramon会根据pcnt的信息把数据传给paramon-svr的节点，
+然后paramon-svr 根据psvr信息显示数据
+
+
+xdsh shenma5 yum install -y /scratch/pkg/software/paramon-pro-5.0.0-956.centos6.x86_64.rpm
+
+
+
+xdcp shenma[1-6] ~/pcnt*   /etc/paratera/
+xdcp shenma[1-6]  utils.conf  /etc/paratera/
+
+xdsh shenma[1-6] /etc/init.d/paramon restart
+
+首先是要配置psvr节点的psvr文件
+psvr文件一共有三个
+cd /etc/paratera/
+接下来修改pcnt的配置文件
+
+也是修改三个文jian
+

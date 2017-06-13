@@ -1,0 +1,64 @@
+#!/bin/sh
+# prologue gets 3 arguments:
+# 1 -- jobid
+# 2 -- userid
+# 3 -- grpid
+#
+export LC_ALL=C
+
+
+jobid=$1
+user=$2
+group=$3
+
+PBS_HOME=/var/lib/torque/
+
+nodefile=$PBS_HOME/aux/$jobid
+if [ -r $nodefile ] ; then
+    nodes=$(sort $nodefile | uniq)
+else
+    nodes=localhost
+fi
+
+#export SCRATCH_DIR=/scratch/$user
+#if [  -d $SCRATCH_DIR ] ; then
+#  if [ -w $SCRATCH_DIR ]; then 
+#  else
+#    echo "The scratch dir $SCRATCH_DIR is not wriatable!"  
+#    exit 0
+#  fi
+#else
+#  mkdir -p $SCRATCH_DIR
+#  chown $user.$group $SCRATCH_DIR
+#fi
+
+export TMP_DIR=/tmp/$user.$jobid
+
+for i in $nodes ; do
+#    ssh $i mkdir -p -m 700 $TMP_DIR 
+#    ssh $i chown $user.$group $TMP_DIR
+    ssh $i ulimit -l unlimited
+    if [ $user != 'root' ] ;then
+       logger -t pbs_mom "enable $user login"
+       ssh $i "perl -pi -e \"s/:ALL\$/ $user :ALL/\" /etc/security/access.conf"
+    fi
+done
+
+ulimit -l unlimited
+
+
+echo "=== Sir/Madam, I AM SHENMA. "
+echo "=== Its my honor to server you !!"
+echo "--------------------------------------------------"
+echo "Begin Prologue $(date)"
+echo "Job ID: $1"
+echo "User ID: $2"
+echo "Group ID: $3"
+echo "TMP_DIR= ${TMP_DIR}"
+echo "MODULE_PATH= ${MODULEPATH}"
+echo "End Prologue"
+echo "--------------------------------------------------"
+echo ""
+
+exit 0
+          

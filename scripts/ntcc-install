@@ -1,0 +1,7 @@
+gmake   FORTRAN_VARIANT=GCC NETCDF_DIR=/pkg/netcdf/4.2.1.1/gcc-4.4  LIBROOT=/pkg/blaslapack/3.4.2/gcc-4.4 MDSPLUS_DIR=/pkg/mdsplus/5.0/gcc-4.4  PREFIX=/pkg/ntcc/gcc-4.4
+
+ NO_TRXPLIB=Y ?
+
+1) compiler/gcc/4.4   3) hdf5/1.8.10        5) mdsplus/5.0
+  2) blaslapack/3.4.2   4) netcdf/4.2.1.1
+

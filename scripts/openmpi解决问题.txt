@@ -1,0 +1,116 @@
+最近openmpi-1.6.3运行的时候老是出现下面的警告：
+
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              shenma156
+  Registerable memory:     4096 MiB
+  Total memory:            65512 MiB
+
+
+集群上参数情况：
+
+cat /etc/security/limits.conf
+* soft memlock unlimited
+* hard memlock unlimited
+
+
+$ ulimit -a
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 515079
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1024
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 1024
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+
+
+可见该设置的地方都是unlimited。
+
+
+想办法解决：
+
+后来我查了openmpi的网站http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages-user，以及其他的网站
+
+http://stackoverflow.com/questions/17755433/how-can-i-increase-openfabrics-memory-limit-for-torque-jobs
+http://comments.gmane.org/gmane.comp.clustering.open-mpi.user/18027，
+
+说是mellanox里面设置的问题，重要的参数是log_num_mtt 和log_mtts_per_seg，并且It is recommended that you adjust log_num_mtt (or num_mtt) such that your max_reg_mem value is at least twice the amount of physical memory on your machine (setting it to a value higher than the amount of physical memory present allows the internal Mellanox driver tables to handle fragmentation and other overhead).
+
+所以我就在 vim /etc/modprobe.d/mlx4_en.conf中添加设置
+options mlx4_core log_num_mtt=24
+options mlx4_core log_mtts_per_seg=1
+
+为了使它生效，所以我想重启驱动，或者是这个模块。
+
+
+我用了modprobe -r mlx4_en
+          modprobe  mlx4_en
+
+也用了/etc/init.d/openibd restart 
+
+命令运行后，均是没反应，然后一段时间后有ctrl+c断掉。
+
+但是现在运行程序的时候却出现了
+
+[root@shenma10 ~]# mpirun -np 4 /scratch/liuxj/ring_c
+CMA: unable to open RDMA device
+CMA: unable to open RDMA device
+[shenma10][[47116,1],1][btl_openib_component.c:1673:init_one_device] CMA: unable to open RDMA device
+error obtaining device context for mlx4_0 errno says No such device
+[shenma10][[47116,1],0][btl_openib_component.c:1673:init_one_device] error obtaining device context for mlx4_0 errno says No such device
+[shenma10][[47116,1],3][btl_openib_component.c:1673:init_one_device] error obtaining device context for mlx4_0 errno says No such device
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   shenma10
+  Local device: mlx4_0
+--------------------------------------------------------------------------
+CMA: unable to open RDMA device
+[shenma10][[47116,1],2][btl_openib_component.c:1673:init_one_device] error obtaining device context for mlx4_0 errno says No such device
+
+这应该是我刚才执行哪些命令的时候把模块搞丢失了之类的问题吧。
+
+
+后来重启了shenma10 ，问题解决，并且内存的问题也解决。
+
+
+
+姚老师给的建议：
+
+echo "24" > /sys/module/mlx4_core/parameters/log_num_mtt
+echo "1" > /sys/module/mlx4_core/parameters/log_mtts_per_seg
+如果没有权限的话 给root加上w的权限，再执行上面的
+查看mod的当前参数值应该就是直接cat上面的两个文件
+具体是否生效了还是要run程序看看
+
+chmod 644 /sys/module/mlx4_core/parameters/log_num_mtt
+chmod 644 /sys/module/mlx4_core/parameters/log_mtts_per_seg
+
+如果是重新加载的话，应该是mlx4_core这个module，加载的时候可能要这么写：
+modprobe mlx4_core log_num_mtt=24 log_mtts_per_seg=1
+因为/etc/modprobe.d/下面的文件我不太清楚直接用modprobe的时候读不读取，如果不读取的话上面的斜体字就要打进去。/etc/modprobe.d/里的文件名是无所谓的，重要的是文件内容指示加载哪个模块或者是修改哪个模块的参数。
+
+shenma10 报错的节点最好的办法就是直接重启，如果不行的话，就和另外一个正常的节点lsmod对比一下看看有没有没有加载的module手工加载
+
