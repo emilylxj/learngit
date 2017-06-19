@@ -1,4 +1,0 @@
-0 0 * * * /home/backup/backupscripts/pkg-rsync.sh &>/dev/null
-10 0 * * * /home/backup/backupscripts/project-rsync.sh  &>/dev/null 
-0 3 * * * /home/backup/backupscripts/tar-pkg.sh &>/dev/null
-10 3 * * * /home/backup/backupscripts/tar-project.sh  &>/dev/null

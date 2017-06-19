@@ -1,5 +1,0 @@
-dn: cn=visitor,ou=groups,dc=hpc,dc=ipp,dc=ac,dc=cn
-objectClass: posixGroup
-cn: visitor
-gidNumber: 509
-memberUid: zyd
